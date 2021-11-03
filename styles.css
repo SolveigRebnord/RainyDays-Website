@@ -38,13 +38,45 @@ input#hamburgermenu {
 }
 
 input#hamburgermenu:checked ~ nav.hamburgermenu {
-    display: block; 
+    display: block;
 }
 
 label [for=hamburgermenu] { 
     font-size: 4rem;
     margin-left: 2rem;
   }
+
+/*Meny utseende */
+
+/* Hele listen i seg selv */
+.hamburgermenu ul {
+    list-style: none;
+    display: inline-block;
+    width: 9rem;
+    background-color: beige;
+    padding: 1.5rem;
+}
+
+/* Liste-elementene */
+.hamburgermenu ul li {
+    border: solid black 0.1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.hamburgermenu ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Linken, altså innholdet i boksene */
+.hamburgermenu li a {
+    text-decoration: none;
+    color:black;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+
 
 
 /* Ikoner */
