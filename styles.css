@@ -18,10 +18,12 @@ header {
 /* Logo Header */
 img.logoheader {
     width: 6rem;
+    height: auto;
     display: block;
-    position: absolute;
-    left: 8.7rem;
-    top: 2.875rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+    
 }
 
 
