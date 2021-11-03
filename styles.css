@@ -7,7 +7,43 @@ img {
     max-width: 300px;
 }
 
-
+/* Header */
 header {
-    background-image: url(images.img/jordan-_g51kA_xq2I-unsplash.jpg)
+    background-image: url(images.img/jordan-_g51kA_xq2I-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    height: 9rem;
+}
+
+/* Logo Header */
+img.logoheader {
+    width: 6rem;
+    display: block;
+    position: absolute;
+}
+
+
+
+/* Hamburgermeny */
+nav.hamburgermenu {
+    display: none;
+}
+
+input#hamburgermenu {
+    display: none;
+}
+
+input#hamburgermenu:checked ~ nav.hamburgermenu {
+    display: block; 
+}
+
+label[for=hamburger-menu] { 
+    font-size: 1rem;
+  }
+
+
+/* Ikoner */
+.fas {
+    color: black;
+    font-size: 2rem;
 }
