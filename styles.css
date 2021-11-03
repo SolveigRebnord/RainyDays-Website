@@ -41,8 +41,9 @@ input#hamburgermenu:checked ~ nav.hamburgermenu {
     display: block; 
 }
 
-label[for=hamburger-menu] { 
-    font-size: 1rem;
+label [for=hamburgermenu] { 
+    font-size: 4rem;
+    margin-left: 2rem;
   }
 
 
