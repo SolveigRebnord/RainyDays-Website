@@ -20,7 +20,7 @@ img.logoheader {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5%;
+    padding-top: 15%;
     
 }
 
@@ -130,7 +130,7 @@ label [for=hamburgermenu] {
 
 @media screen and (min-width: 600px) {
     img.logoheader {
-        padding-top: 16rem;
+        
         width: 100%
         height: auto;
     }
