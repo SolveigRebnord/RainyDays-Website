@@ -812,7 +812,7 @@ p.prize {
 
 @media screen and (max-width: 447px) {
     .productlist img {
-       width: 7rem;
+       width: 9rem;
     }
 }
 
@@ -848,3 +848,4 @@ p.prize {
        width: 7rem;
        height: 2.5rem;
     }
+}
