@@ -139,7 +139,7 @@ label [for=hamburgermenu] {
 
 @media screen and (min-width: 800px) {
     img.logoheader {
-        padding-top: 14rem;
+        padding-top: 11rem;
         width: 20rem;
         height: auto;
     }
