@@ -40,6 +40,7 @@ input#hamburgermenu {
 input#hamburgermenu:checked ~ nav.hamburgermenu {
     display: block;
 }
+/* Transition?*/
 
 label [for=hamburgermenu] { 
     font-size: 4rem;
@@ -82,5 +83,17 @@ label [for=hamburgermenu] {
 /* Ikoner */
 .fas {
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.shoppingbag {
+    margin-right: 2rem;
+}
+
+
+
+div.icons {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
 }
