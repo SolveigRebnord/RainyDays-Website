@@ -136,3 +136,17 @@ label [for=hamburgermenu] {
     }
 }
 
+@media screen and (max-width: 900px) {
+    img.logoheader {
+        padding-top: 30%;
+    
+    }
+}
+
+@media screen and (max-width: 900px) {
+    img.logoheader {
+        padding-top: 13%
+    
+    }
+}
+
