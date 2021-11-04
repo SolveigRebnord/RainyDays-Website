@@ -1,7 +1,4 @@
 
-* {
-    border: solid 0.1rem red;
-}
 main {
     margin: 2rem;
 }
@@ -549,7 +546,7 @@ div.copyright {
 /* --------------------------------ourproducts.html -------------------------*/
 
 
-
+/* Sette opp grid og flex */
 .gridforhele {
     display: grid;
     grid-template-areas: 'aside section section';
@@ -577,6 +574,7 @@ div.infoimage {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;
 }
 
 .productlist {
@@ -584,8 +582,9 @@ div.infoimage {
     justify-content: space-around;
 }
 
-.productcol {
+div.productcol {
     display: inline-block;
+    padding-bottom: 1rem;
 }
 
 .sortedbyfilters {
@@ -593,15 +592,49 @@ div.infoimage {
 }
 
 aside {
-    flex-basis: 15rem;
+    width: 250px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+div.infoimage {
+    display: inline-block;
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+/* Style infotext og knapp */
+
+.infoimage p {
+    margin: 0%;
+}
+
+p.prize {
+    font-size: 20px;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.infoimage a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    background-color: #7C6F61;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+
 }
 
 
-
-
-
-
-
+/* Page Button */
 
 
 
@@ -716,8 +749,27 @@ aside {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 447px) {
     .productlist img {
        width: 7rem;
     }
 }
+
+@media screen and (max-width: 447px) {
+    div.infoimage  {
+       width: 112px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    div.infoimage  {
+       width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .navmenu > nav {
+       display: none;
+    }
+} /* FUnker ikke, får ikke vekk menyen */
