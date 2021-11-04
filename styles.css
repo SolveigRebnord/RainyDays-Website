@@ -100,3 +100,24 @@ label [for=hamburgermenu] {
     justify-content: space-around;
     padding-top: 3rem;
 }
+
+.search {
+    width: 11rem;
+    height: auto
+    border: solid black;
+    border-width: 0.1rem;
+    border-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.search ::placeholder {
+    text-align: right;
+    color: black;
+}
+
+.search :hover {
+    outline: none;
+} /*Fikse dette senere for gøy */
