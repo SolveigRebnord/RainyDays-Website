@@ -91,9 +91,12 @@ label [for=hamburgermenu] {
 }
 
 
+/* Seksjon: søkefelt og ikoner */
 
-div.icons {
-    float: right;
-    margin-right: 2rem;
-    margin-top: 1rem;
+.searchicons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
 }
