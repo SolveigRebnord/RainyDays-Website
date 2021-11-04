@@ -3,9 +3,7 @@ body {
     margin: 0;
 }
 
-img {
-    max-width: 300px;
-}
+
 
 /* Header */
 header {
@@ -121,3 +119,28 @@ label [for=hamburgermenu] {
 .search :hover {
     outline: none;
 } /*Fikse dette senere for gøy */
+
+
+@media screen and (min-width: 600px) {
+    header {
+        height: 40rem;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    img.logoheader {
+        padding-top: 16rem;
+        width: 100%
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    img.logoheader {
+        padding-top: 14rem;
+        width: 20rem;
+        height: auto;
+    }
+}
