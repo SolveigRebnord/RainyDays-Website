@@ -7,6 +7,10 @@ main {
     box-sizing: border-box;
 }
 
+* {
+    font-family: sans-serif;
+}
+
 section {
 
     padding-bottom: 3rem;
@@ -637,12 +641,48 @@ p.prize {
 /* Page Button */
 
 
+.pagebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.pagebutton a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    padding-top: 0.7rem;
+    color: black;
+    letter-spacing: 0.05rem;
+    height: 2.5rem;
+    
+}
 
+#previouspage, #nextpage {
+    width: 10rem;
+    height: 2.5rem;
+    border: solid 1px grey;
+    text-align: center;
+}
 
+#nextpage {
+    border: black solid 2px;
+}
 
+.pagebutton p {
+    margin: 2rem;
+    display: block;
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 0.05rem;
+}
 
-
+.pagebutton :hover {
+    background-color: black;
+    color: white;
+}
+/*Hvordan får jeg dette til å bare være buttons, altså a??*/
 
 
 @media screen and (min-width: 600px) {
