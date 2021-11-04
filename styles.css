@@ -642,10 +642,10 @@ p.prize {
 }
 
 
-/* Page Button */
+/* Page Button -------------------------------------*/
 
 
-.pagebutton {
+.pagebutton-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -653,7 +653,8 @@ p.prize {
 
 
 
-.pagebutton a {
+/* Desktop */
+.pagebutton-desktop a { 
     display: block;
     text-decoration: none;
     font-size: 0.8rem;
@@ -662,9 +663,7 @@ p.prize {
     color: black;
     letter-spacing: 0.05rem;
     height: 2.5rem;
-    
 }
-
 #previouspage, #nextpage {
     width: 10rem;
     height: 2.5rem;
@@ -676,7 +675,7 @@ p.prize {
     border: black solid 2px;
 }
 
-.pagebutton p {
+.pagebutton-desktop p {
     margin: 2rem;
     display: block;
     font-size: 1rem;
@@ -684,11 +683,53 @@ p.prize {
     letter-spacing: 0.05rem;
 }
 
-.pagebutton :hover {
+.pagebutton-desktop :hover {
     background-color: black;
     color: white;
 }
+
 /*Hvordan får jeg dette til å bare være buttons, altså a??*/
+
+
+
+/* Mobil */
+
+
+.pagebutton-mobil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#previouspagemobil, #nextpagemobil {
+    width: 5rem;
+    height: 2.5rem;
+    border: solid 1px grey;
+    text-align: center;
+}
+
+
+.pagebutton-mobil a { 
+    display: block;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding-top: 0.7rem;
+    color: black;
+    height: 2.5rem;
+}
+
+.pagebutton-mobil p {
+    margin: 1rem;
+    display: block;
+    font-size: 1rem;
+    font-family: sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+
+
+
+
 
 
 #homelink a {
@@ -812,7 +853,7 @@ p.prize {
 
 @media screen and (max-width: 447px) {
     .productlist img {
-       width: 11rem;
+       width: 9rem;
     }
 }
 
@@ -843,15 +884,28 @@ p.prize {
     }
 }
 
-@media screen and (max-width: 768px) {
-    #previouspage, #nextpage {
-       width: 7rem;
-       height: 2.5rem;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .searchicons {
        display: none;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .pagebutton-desktop {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pagebutton-mobil {
+       display: none;
+    }
+}
+
+
+
+
