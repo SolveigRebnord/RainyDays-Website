@@ -101,7 +101,7 @@ label [for=hamburgermenu] {
 
 .search {
     width: 11rem;
-    height: auto
+    height: auto;
     border: solid black;
     border-width: 0.1rem;
     border-color: black;
