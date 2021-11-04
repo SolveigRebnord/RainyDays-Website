@@ -849,3 +849,9 @@ p.prize {
        height: 2.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .searchicons {
+       display: none;
+    }
+}
