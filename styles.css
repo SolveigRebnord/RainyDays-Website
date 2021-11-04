@@ -144,15 +144,19 @@ ul.menu > li {
     font-size: 2rem;
 }
 
+
 .shoppingbag {
     margin-right: 2rem;
-}
+} 
 
 
 /* Seksjon: søkefelt og ikoner */
 
+
+
 .searchicons {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -647,6 +651,8 @@ p.prize {
     align-items: center;
 }
 
+
+
 .pagebutton a {
     display: block;
     text-decoration: none;
@@ -683,6 +689,21 @@ p.prize {
     color: white;
 }
 /*Hvordan får jeg dette til å bare være buttons, altså a??*/
+
+
+#homelink a {
+    display: block;
+    width: 5rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+
+
+/* -------------------------------------Responsive --------------------------------*/
+
 
 
 @media screen and (min-width: 600px) {
@@ -813,3 +834,17 @@ p.prize {
        display: none;
     }
 } /* FUnker ikke, får ikke vekk menyen */
+
+
+@media screen and (max-width: 768px) {
+    .infoimage a {
+       padding: 0.3rem 1rem 0.3rem 1rem;
+       font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #previouspage, #nextpage {
+       width: 7rem;
+       height: 2.5rem;
+    }
