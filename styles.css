@@ -1,4 +1,7 @@
 
+* {
+    border: solid 0.1rem red;
+}
 main {
     margin: 2rem;
 }
@@ -81,6 +84,54 @@ label [for=hamburgermenu] {
     color:black;
     font-family: monospace;
     font-size: 1rem;
+}
+
+
+/* CSS for menyen som designet i productlist.html, som jeg vil ha det uten hamburger 
+Gitt de helt nye klassenavn */
+
+ul.menu li {
+    list-style: none;
+    float: left;
+}
+
+ul.menu > li {
+
+    margin-left: auto;
+    margin-right: auto;
+} /* FÅR IKKE TIL Å MIDTSTILLE LISTEN */
+
+.menu a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1rem;
+    
+}
+
+#menu1 a {
+    background-color: #0A3641;
+    color: white;
+}
+
+#menu2 a {
+    background-color: #484848;
+    color: white;
+}
+
+#menu3 a {
+    background-color: #9E9090;
+}
+
+#menu4 a {
+    background-color: #C4C4C4;
 }
 
 
@@ -348,7 +399,7 @@ div.imagenewsletter {
 }
 
 
-form {
+#newsletterformform {
     background-color: #7C6F61;
     padding: 2rem;
     width: 35rem;
@@ -362,7 +413,7 @@ form ul {
     list-style: none
 }
 
-fieldset {
+#newsletterfieldset {
     border-width: 0.1rem;
     border-style: solid;
     color: white;
@@ -495,6 +546,62 @@ div.copyright {
     height: fit-content;
 }
 
+/* --------------------------------ourproducts.html -------------------------*/
+
+
+
+.gridforhele {
+    display: grid;
+    grid-template-areas: 'aside section section';
+    gap: 1rem;
+}
+
+aside.filtermenu {
+    display: block;
+    background-color: bisque;
+}
+
+.productlist img {
+    width: 20rem;
+    height: auto;
+    display: block;
+}
+
+div.infoimage {
+    width: fit-content;
+}
+
+.productlist section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productlist {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productcol {
+    display: inline-block;
+}
+
+.sortedbyfilters {
+    display: inline;
+}
+
+aside {
+    flex-basis: 15rem;
+}
+
+
+
+
+
+
+
 
 
 
@@ -575,14 +682,14 @@ div.copyright {
 }
 
 @media screen and (max-width: 600px) {
-    form {
+    #newsletterformform {
         width: 24rem;
         padding: 1.2rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-form ul {
+    #newsletterformform  ul {
     padding-left: 1rem;
     
 }
@@ -594,3 +701,23 @@ form ul {
     }
 }
 
+
+/* ---------------------------------Our products ------------------- */
+
+@media screen and (max-width: 900px) {
+    aside.filtermenu {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productlist img {
+       width: 10rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .productlist img {
+       width: 7rem;
+    }
+}
