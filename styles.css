@@ -123,7 +123,7 @@ label [for=hamburgermenu] {
 
 @media screen and (min-width: 600px) {
     header {
-        height: 40rem;
+        height: 35rem;
         background-size: cover;
     }
 }
