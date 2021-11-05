@@ -1293,6 +1293,13 @@ p.prize {
     }
 }
 
+@media screen and (max-width: 450px) {
+    body, main {
+    margin: 0;
+    }
+}
+
+
 
 /* ---------------------------------Our products ------------------- */
 
