@@ -676,6 +676,7 @@ div.menumobil {
     margin-right: auto;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .menumobil ul {
@@ -686,11 +687,13 @@ margin: 0;
 .socialmediamobil {
     float: right;
     margin-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .tothetopmobil {
     margin-left: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
 
 }
 
@@ -1355,6 +1358,11 @@ p.prize {
     }
 }
 
+@media screen and (max-width: 1090px) {
+    div.copyright {
+        margin-top: 1rem;
+    }
+}
 
 
 
