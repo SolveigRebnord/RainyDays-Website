@@ -179,43 +179,47 @@ ul.menu > li {
 /* New collection */
 
 .cityimage img {
-    width: 40rem;
-    height: 38rem;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
 .umbrellaimage img {
-    width: 23.9rem;
-    height: 38rem;
+    width: 94%;
+    height: auto;
     display: block;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
 .newcollectiontop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+
 }
 
 .umbrellaimage {
-    flex: 33%;
+    flex: 40%;
 }
 
 .cityimage {
-    flex: 67%;
+    flex: 60%;
+}
+
+div.newcollectiontop {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-
-
-.newcollection {
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-top: 10rem;
-
-    display: grid;
-    grid-template-rows: auto auto;
+div.newcollectionbottom {
+width: 80%;
+margin-left: auto;
+margin-right: auto;
 }
 
 .newcollectionbottom {
@@ -251,6 +255,62 @@ div.showmelink {
 h4 {
     font-family: fantasy;
 }
+
+
+
+/* TOPDEL AV NEW COLLECTION*/
+@media screen and (max-width: 1250px) {
+    .cityimage {
+        flex: 100%;
+        width: 80%
+    }
+}
+@media screen and (max-width: 1250px) {
+    div.newcollectiontop {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .umbrellaimage {
+        display: none;
+    }
+}
+
+/*BUNNDEL AV NEW COLLECTION*/
+
+@media screen and (max-width: 1250px) {
+.showmelink {
+    flex: 50%;
+}
+}
+@media screen and (max-width: 1250px) {
+    .collectiontext {
+        flex: 50%;
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+    .newcollectionbottom {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .newcollectionbottom {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div.collectiontext, div.showmelink {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
 
 
 
@@ -326,15 +386,29 @@ color: black;
 
 /* Shop by category + kule bilder */
 
-div.shopbycategoryimages {
-    display: flex;
-    gap: 2rem;
+
+.shopbycategoryimages img {
+    width: 30.5vw;
+    height: auto;
+    display: block;
 }
 
-.shopbycategoryimages img{
-    width: 31.7%;
-    height: auto;
+.shopbycategoryimages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
 }
+
+#categoryimage1, #categoryimage2, #categoryimage3 {
+    flex: 33.3%;
+}
+
+div.shopbycategoryimages {
+    width: 100%;
+}
+
+
 
 h2.adventure {
     padding-top: 3vh;
@@ -353,11 +427,32 @@ a.linkcategory {
 }
 
 
-
-
 div.shopbycategorytext {
     padding-bottom: 2rem;
 }
+
+
+@media screen and (max-width: 1330px) {
+    .shopbycategoryimages {
+        flex: 100%;
+    }   
+}
+
+@media screen and (max-width: 1330px) {
+    #categoryimage3, #categoryimage2 {
+        flex: 50%;
+    }   
+}
+
+@media screen and (max-width: 1330px) {
+    #categoryimage1 {
+        display: none;
+    }   
+}
+
+
+
+
 
 
 /* Shop our bestsellers */
@@ -417,24 +512,40 @@ height: 3.5rem;
 
 }
 
-
+/*
 .bestsellerright a {
     display: block;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 1.2rem;
-    padding: 0.9rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
     border: solid white;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 
 }
+*/
 
 
 
+a.shopbestsellersbutton {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: solid 2px white;
+    display: inline-block;
+}
+
+div.bestsellerknapp {
+    text-align: center;
+}
 
 /* Newsletter */
 
@@ -1074,12 +1185,6 @@ p.prize {
         
     }
 }
-
-@media screen and (max-width: 1000px) {
-    #categoryimage1 {
-        display: none;
-    }
-} 
 
 
 @media screen and (max-width: 600px) {
