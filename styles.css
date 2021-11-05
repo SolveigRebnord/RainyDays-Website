@@ -516,6 +516,7 @@ a.shopbestsellersbutton {
     background-color: transparent;
     border: solid 2px white;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 div.bestsellerknapp {
