@@ -39,8 +39,10 @@ header {
 
 .icons {
     flex: 33.3%;
-    padding-left: 20vw;
+    padding-left: 10vw;
 }
+
+
 
 
 img.logoheader {
@@ -60,7 +62,7 @@ img.logoheader {
 }
 
 .shoppingbag {
-    margin-right: 1.5rem;
+    margin-right: 3vw;
 } 
 
 div.burgermenu {
@@ -971,8 +973,30 @@ p.prize {
 /*Ta vekk padding når det er under 600px */
 
 
+@media screen and (min-width: 1000px) {
+    #searchicon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .icons {
+        padding-left: 16vw;
+    }
+}
 
 
+@media screen and (max-width: 400px) {
+    .icons {
+        padding-left: 10vw;
+    }
+}
 
 
 @media screen and (max-width: 700px) {
