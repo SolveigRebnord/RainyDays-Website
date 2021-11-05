@@ -660,10 +660,10 @@ div.menulists {
 .menumobil a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border: white solid 2px;
-    background-color: #9E9090;
+    background-color: #857373;
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: 600;
