@@ -39,7 +39,7 @@ header {
 
 .icons {
     flex: 33.3%;
-    padding-left: 10vw;
+    padding-left: 9vw;
 }
 
 
@@ -68,6 +68,11 @@ img.logoheader {
 div.burgermenu {
     padding-left: 3vw;
 }
+
+.search {
+    margin-right: 2vw;
+}
+
 
 
 
@@ -171,44 +176,82 @@ ul.menu > li {
 
 
 
+/* New collection */
 
+.cityimage img {
+    width: 40rem;
+    height: 38rem;
+    display: block;
+}
 
-/* Seksjon: søkefelt og ikoner */
+.umbrellaimage img {
+    width: 23.9rem;
+    height: 38rem;
+    display: block;
 
+}
 
-
-.searchicons {
+.newcollectiontop {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.umbrellaimage {
+    flex: 33%;
+}
+
+.cityimage {
+    flex: 67%;
+}
+
+
+
+
+.newcollection {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
+
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.newcollectionbottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding-top: 3rem;
+    gap: 5rem;
 }
 
-.search {
-    width: 11rem;
-    height: auto;
-    border: solid black;
-    border-width: 0.1rem;
-    border-color: black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
+.collectiontext {
+    flex: 30%;
 }
 
-.search ::placeholder {
-    text-align: right;
+.showmelink {
+    flex: 20%;
+}
+
+div.showmelink {
+    text-align: end;
+}
+
+.showmelink a {
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: white;
     color: black;
+    border: black solid 2px;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-.search :hover {
-    outline: none;
-} /*Fikse dette senere for gøy */
+h4 {
+    font-family: fantasy;
+}
 
-
-/* New collection */
 
 
 /* Shop Woman */
@@ -973,19 +1016,19 @@ p.prize {
 /*Ta vekk padding når det er under 600px */
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1070px) {
     #searchicon {
         display: none;
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1070px) {
     .search {
         display: none;
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1070px) {
     .icons {
         padding-left: 16vw;
     }
