@@ -15,3 +15,89 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+
+.checkoutimage img {
+    width: 9rem;
+    height: auto;
+    display: block;
+    margin-left: 5rem;
+    margin-top: 3.2rem;
+    outline: solid white 1px;
+}
+
+.cartcheckout {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9E9090;
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+.checkoutimage {
+    flex: 50%;
+}
+
+.checkoutdetails {
+    flex: 50%;
+}
+
+#x {
+color: white;
+text-decoration: none;
+padding: 0.5rem;
+border: solid 1px white;
+margin-right: 2rem;
+display: block;
+width: 2rem;
+height: 2rem;
+margin-top: 2rem;
+
+margin-left: 80%;
+
+}
+
+.addremove a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border: solid white 1px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.addremove p {
+    display: inline-block;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Har har du eksemel på når det funker foran og bak klasse, er det pga inline/block?*/
+div.addremove {
+    
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin-left: 50%;
+    margin-top: 5rem;
+   
+
+}
+
+p.prizecheckout {
+    display: block;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 53%;
+    margin-bottom: 2rem;
+    
+
+}
+
