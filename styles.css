@@ -683,6 +683,23 @@ padding: 0;
 margin: 0;
 }
 
+.socialmediamobil {
+    float: right;
+    margin-right: 2rem;
+}
+
+.tothetopmobil {
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+
+}
+
+.tothetopmobil a{
+    color: white;
+
+}
+
+
 
 /*Prøve få menyen inni en boksliste*/
 @media screen and (max-width: 1090px) {
@@ -696,6 +713,33 @@ margin: 0;
         display: none;
     }
 }
+
+/*Få med social media og topt he top*/
+
+@media screen and (max-width: 1090px) {
+    div.socialmedia {
+        display: none;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .tothetop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .tothetopmobil {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    div.socialmediamobil {
+        display: none;
+    }
+}
+
+
 
 
 
