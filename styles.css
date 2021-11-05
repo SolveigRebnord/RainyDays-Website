@@ -14,6 +14,11 @@ main {
 body {
     margin: 0;
 }
+
+h1 {
+    text-align: center;
+    padding-top: 5vw;
+}
 /* ----------------------------------------------------index.html--------------------------------------------------------------------*/
 
 /* Header */
@@ -862,7 +867,7 @@ div.copyright {
     display: grid;
     grid-template-areas: 'aside section section';
     gap: 2vw;
-    margin-top: 5vw;
+    margin-top: 10vw;
 }
 
 aside.filtermenu {
@@ -1085,6 +1090,10 @@ p.prize {
     margin-left: auto;
     margin-right: auto;
     color: black;
+}
+
+#homelink {
+    text-align: center;
 }
 
 
