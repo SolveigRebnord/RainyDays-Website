@@ -11,6 +11,9 @@ main {
     font-family: sans-serif;
 }
 
+body {
+    margin: 0;
+}
 /* ----------------------------------------------------index.html--------------------------------------------------------------------*/
 
 /* Header */
@@ -858,16 +861,70 @@ div.copyright {
 .gridforhele {
     display: grid;
     grid-template-areas: 'aside section section';
-    gap: 1rem;
+    gap: 2vw;
+    margin-top: 5vw;
 }
 
 aside.filtermenu {
     display: block;
-    background-color: bisque;
+    background-color: white;
+    border: solid black 2px;
+    padding: 3vw 1vw 3vw 1vw;
 }
 
+aside {
+    width: 250px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+/*Styling*/
+
+#fargeiconblack, #fargeicongrey, #fargeiconbeige, #fargeiconblue {
+    font-size: 0.8rem;
+}
+
+#fargeiconblack {
+    color: black;
+}
+
+#fargeicongrey {
+    color: grey;
+}
+
+#fargeiconbeige {
+    color: beige;
+}
+
+#fargeiconblue {
+    color: navy;
+}
+
+.categorydiv a {
+    float: right;
+}
+
+.filtermenu > div {
+    padding-bottom: 3vw;
+}
+
+div.sex {
+    padding-bottom: 3vw;
+}
+
+.filtermenu input {
+background-color: #9E9090;
+color: white;
+letter-spacing: 0.05rem;
+}
+
+
+
+
+/*Product - høyre siden*/
+
 .productlist img {
-    width: 20rem;
+    width: 18rem;
     height: auto;
     display: block;
 }
@@ -895,24 +952,17 @@ div.productcol {
     padding-bottom: 1rem;
 }
 
-.sortedbyfilters {
-    display: inline;
-}
-
-aside {
-    width: 250px;
-    margin-right: 20px;
-    height: fit-content;
-}
 
 div.infoimage {
     display: inline-block;
-    width: 160px;
+    width: 18rem;
     height: 150px;
     text-align: center;
     padding: 1rem;
 
 }
+
+
 
 /* Style infotext og knapp */
 
@@ -930,9 +980,9 @@ p.prize {
 .infoimage a {
     display: inline-block;
     text-decoration: none;
-    font-family: monospace;
+    font-family: sans-serif;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0.7rem 3rem 0.7rem 3rem;
     background-color: #7C6F61;
     color: white;
@@ -993,7 +1043,6 @@ p.prize {
 
 
 /* Mobil */
-
 
 .pagebutton-mobil {
     display: flex;
