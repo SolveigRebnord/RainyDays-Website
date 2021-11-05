@@ -22,17 +22,17 @@ header {
     background-image: url(images.img/jordan-_g51kA_xq2I-unsplash.jpg);
     background-size:cover;
     position: relative;
-    height: 9rem;
+    height: 14vw;
 }
 
 /* Logo Header */
 img.logoheader {
-    width: 20vw;
+    width: 12vw;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 13%;
+    padding-top: 5vw;
     
 }
 
@@ -927,40 +927,12 @@ p.prize {
 
 
 
-@media screen and (min-width: 600px) {
-    header {
-        height: 30rem;
-        background-size: cover;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    img.logoheader {
-
-        width: 20rem;
-        height: auto;
-        padding-top: 12%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    img.logoheader {
-        padding-top: 30%;
-    
-    }
-}
 
 
 /* Aner ikke hvordan jeg skal få vekk hamburgermeny, det skal hvertfall sm her begynne ved 900px */
 
 
 
-@media screen and (max-width: 600px) {
-    img.logoheader {
-        padding-top: 13%
-    
-    }
-}
 
 @media screen and (max-width: 700px) {
     .bestsellerright img {
