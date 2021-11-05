@@ -661,13 +661,16 @@ div.menulists {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 0.8rem 3rem 0.8rem 3rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     border: white solid 2px;
-    background-color: transparent;
+    background-color: #7C6F61;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 div.menumobil {
-    height: 12rem;
+    height: fit-content;
     width: 17rem;
     margin-left: auto;
     margin-right: auto;
@@ -677,6 +680,7 @@ div.menumobil {
 
 .menumobil ul {
 padding: 0;
+margin: 0;
 }
 
 
