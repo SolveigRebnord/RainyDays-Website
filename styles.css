@@ -641,7 +641,7 @@ footer {
 }
 
 div.menulists {
-    width: 40%;
+    width: 48%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -650,6 +650,49 @@ div.menulists {
 .menulists > div {
     height: 3rem;
 }
+
+/* STYLE FOOTERMENU MOBIL */
+
+.menumobilul {
+    list-style: none;
+}
+
+.menumobil a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    border: white solid 2px;
+    background-color: transparent;
+}
+
+div.menumobil {
+    height: 12rem;
+    width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menumobil ul {
+padding: 0;
+}
+
+
+/*Prøve få menyen inni en boksliste*/
+@media screen and (max-width: 1090px) {
+    .menulists {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .menumobil {
+        display: none;
+    }
+}
+
 
 
 
