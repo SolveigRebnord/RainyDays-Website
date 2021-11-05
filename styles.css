@@ -11,8 +11,10 @@ main {
     font-family: sans-serif;
 }
 
+/* ----------------------------------------------------index.html--------------------------------------------------------------------*/
 
 /* Header */
+
 header {
     background-image: url(images.img/mohamed-ziyan-ayTl3SMXCoc-unsplash.jpg);
     background-size:cover;
@@ -24,6 +26,8 @@ header {
     align-items: center;
     margin-bottom: 1vw;
 }
+
+/*Flex oppsett*/
 
 .burgermenu {
     flex: 33.3%;
@@ -39,38 +43,14 @@ header {
 }
 
 
-
-
+/*Style logo*/
 img.logoheader {
     width: 12vw;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
-
-
-/* Ikoner */
-.fas {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.shoppingbag {
-    margin-right: 3vw;
-} 
-
-div.burgermenu {
-    padding-left: 3vw;
-}
-
-.search {
-    margin-right: 2vw;
-}
-
-
-
 
 
 /* Hamburgermeny */
@@ -85,26 +65,22 @@ input#hamburgermenu {
 input#hamburgermenu:checked ~ nav.hamburgermenu {
     display: block;
 }
-/* Transition?*/
 
-label [for=hamburgermenu] { 
-    font-size: 4rem;
-  }
+div.burgermenu {
+    padding-left: 3vw;
+}
 
-/*Meny utseende */
-
-/* Hele listen i seg selv */
 .hamburgermenu ul {
     list-style: none;
     display: inline-block;
-    width: 9rem;
-    background-color: beige;
-    padding: 1.5rem;
+    width: 14rem;
+    background-color: #7C6F61;
+    padding: 2rem;
 }
 
-/* Liste-elementene */
+
 .hamburgermenu ul li {
-    border: solid black 0.1rem;
+    border: solid white 0.1rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -113,64 +89,73 @@ label [for=hamburgermenu] {
     margin-bottom: 0;
 }
 
-/* Linken, altså innholdet i boksene */
+
 .hamburgermenu li a {
     text-decoration: none;
-    color:black;
-    font-family: monospace;
-    font-size: 1rem;
-}
-
-
-/* CSS for menyen som designet i productlist.html, som jeg vil ha det uten hamburger 
-Gitt de helt nye klassenavn */
-
-ul.menu li {
-    list-style: none;
-    float: left;
-}
-
-ul.menu > li {
-
-    margin-left: auto;
-    margin-right: auto;
-} /* FÅR IKKE TIL Å MIDTSTILLE LISTEN */
-
-.menu a {
-
-    text-decoration: none;
-    color: black;
-    font-size: 0.7rem;
+    color:white;
     text-transform: uppercase;
     font-weight: 600;
-    overflow: hidden;
-    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    margin: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1rem;
-    
+    font-family: sans-serif;
+    font-size: 0.8rem;
 }
 
-#menu1 a {
-    background-color: #0A3641;
+
+/* Ikoner + search */
+.fas {
     color: white;
+    font-size: 1.5rem;
 }
 
-#menu2 a {
-    background-color: #484848;
-    color: white;
+.shoppingbag {
+    margin-right: 3vw;
+} 
+
+.search {
+    margin-right: 2vw;
 }
 
-#menu3 a {
-    background-color: #9E9090;
+/* Usikker på om lage menyliste eller ikke. Den må i så fall inn i den flexrammen du har alt, og det fucker opp med alt*/
+
+
+/* Får ikonene til å skyves innover igjen*/
+@media screen and (max-width: 700px) {
+    .icons {
+        padding-left: 15vw;
+    }
 }
 
-#menu4 a {
-    background-color: #C4C4C4;
+@media screen and (max-width: 500px) {
+    .icons {
+        padding-left: 8vw;
+    }
 }
 
-section {
-    margin-bottom: 7vw;
+/*Ta vekk padding når det er under 600px */
+
+
+@media screen and (min-width: 1070px) {
+    #searchicon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .search {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .icons {
+        padding-left: 16vw;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .icons {
+        padding-left: 10vw;
+    }
 }
 
 
@@ -188,7 +173,6 @@ section {
     display: block;
     margin-right: auto;
     margin-left: auto;
-
 }
 
 .newcollectiontop {
@@ -196,7 +180,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .umbrellaimage {
@@ -312,7 +295,6 @@ h4 {
 
 
 
-
 /* Shop Woman */
 
 .imageshopwoman img {
@@ -339,13 +321,13 @@ div.buttonshopwoman {
     position: absolute;
     top: 50%;
     right: 12%
-
 }
 
 div.buttonshopwoman :hover {
     background-color: silver;
     color: black;
     } 
+
 
 
 /* Shop Man */
@@ -383,7 +365,7 @@ color: black;
 
 
 
-/* Shop by category + kule bilder */
+/* Shop by category */
 
 
 .shopbycategoryimages img {
@@ -407,8 +389,6 @@ div.shopbycategoryimages {
     width: 100%;
 }
 
-
-
 h2.adventure {
     padding-top: 3vh;
     text-align: right;
@@ -431,6 +411,7 @@ div.shopbycategorytext {
 }
 
 
+/*Responsiveness*/
 @media screen and (max-width: 1330px) {
     .shopbycategoryimages {
         flex: 100%;
@@ -448,7 +429,6 @@ div.shopbycategorytext {
         display: none;
     }   
 }
-
 
 
 
@@ -485,26 +465,19 @@ div.shopbycategorytext {
     padding-bottom: 3rem;
     margin-right: auto;
     margin-left: auto;
-    
 }
-
 
 div.bestsellerleft {
     flex: 50%;
     width: fit-content;
     height: fit-content;
-    
 }
 
 div.bestsellerright {
     flex: 50%;
     width: fit-content;
     height: fit-content;
-    
 }
-
-
-
 
 a.shopbestsellersbutton {
     text-decoration: none;
@@ -523,12 +496,16 @@ div.bestsellerknapp {
     text-align: center;
 }
 
+
+/*Responsiveness*/
 @media screen and (max-width: 700px) {
     .shopourbestsellers {
         flex: 100%;
         flex-direction: column;
     }
 }
+
+
 
 
 /* Newsletter */
@@ -541,7 +518,6 @@ div.bestsellerknapp {
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
-    
 }
 
 div.newsletterform {
@@ -572,7 +548,6 @@ div.imagenewsletter {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 form ul {
@@ -606,7 +581,7 @@ input#name:hover, input#email:hover {
 li {
     padding-bottom: 1rem;
 }
-/* får ikke til å ikke ha på submit.. last child dritt*/
+
 
 .submitnewsletter button {
     color: white;
@@ -617,7 +592,6 @@ li {
     padding: 0.4rem 2.2rem 0.4rem 2.2rem;
     border: solid white;
     background-color: grey;
-    
 }
 
 .submitnewsletter button:hover {
@@ -703,51 +677,6 @@ margin: 0;
 
 }
 
-
-
-/*Prøve få menyen inni en boksliste*/
-@media screen and (max-width: 1090px) {
-    .menulists {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1090px) {
-    .menumobil {
-        display: none;
-    }
-}
-
-/*Få med social media og topt he top*/
-
-@media screen and (max-width: 1090px) {
-    div.socialmedia {
-        display: none;
-    }
-}
-@media screen and (max-width: 1090px) {
-    .tothetop {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1090px) {
-    .tothetopmobil {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1090px) {
-    div.socialmediamobil {
-        display: none;
-    }
-}
-
-
-
-
-
-
 .aboutuslist ul, .customerservicelist ul, .productslist ul {
     list-style: none;
     display: inline-block;
@@ -775,8 +704,6 @@ mark {
     text-transform: uppercase;
     padding-right: 1rem;
 }
-
-
 
 
 
@@ -819,6 +746,46 @@ div.copyright {
     height: fit-content;
     margin-top: 4rem;
 }
+
+
+/* Responsiveness*/
+@media screen and (max-width: 1090px) {
+    .menulists {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .menumobil {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+    div.socialmedia {
+        display: none;
+    }
+}
+@media screen and (max-width: 1090px) {
+    .tothetop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    .tothetopmobil {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    div.socialmediamobil {
+        display: none;
+    }
+}
+
+
 
 /* --------------------------------ourproducts.html ------------------------------------------------------------------------------*/
 
@@ -1203,46 +1170,6 @@ p.prize {
 
 
 
-/* Får ikonene til å skyves innover igjen*/
-@media screen and (max-width: 700px) {
-    .icons {
-        padding-left: 15vw;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .icons {
-        padding-left: 8vw;
-    }
-}
-
-/*Ta vekk padding når det er under 600px */
-
-
-@media screen and (min-width: 1070px) {
-    #searchicon {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1070px) {
-    .search {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1070px) {
-    .icons {
-        padding-left: 16vw;
-    }
-}
-
-
-@media screen and (max-width: 400px) {
-    .icons {
-        padding-left: 10vw;
-    }
-}
 
 
 @media screen and (max-width: 700px) {
