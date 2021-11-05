@@ -551,7 +551,7 @@ div.copyright {
     height: fit-content;
 }
 
-/* --------------------------------ourproducts.html -------------------------*/
+/* --------------------------------ourproducts.html ------------------------------------------------------------------------------*/
 
 
 /* Sette opp grid og flex */
@@ -729,9 +729,6 @@ p.prize {
 
 
 
-
-
-
 #homelink a {
     display: block;
     width: 5rem;
@@ -740,6 +737,189 @@ p.prize {
     margin-right: auto;
     color: black;
 }
+
+
+/* ------------------------------------------------------product.html-----------------------------------------------------*/
+
+.productsection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.productimages {
+    flex: 50%;
+}
+
+.productinfo {
+    flex: 50%;
+    display: block;
+}
+
+
+.smallimages img {
+    width: 170px;
+    height: 160px;
+    overflow: hidden;
+    display: block;
+    padding-bottom: 15px;
+}
+/* Legg inn hover over bildene!*/
+
+
+.smallimages img:last-child {
+    padding-bottom: 0;
+}
+
+.productsiteimage img {
+    max-width: 400px;
+    display: block;
+}
+
+.productimages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallimages {
+    flex: 30%;
+}
+
+.productsiteimage {
+    flex: 70%;
+}
+
+
+h2.h2product {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.01rem;
+    
+}
+
+.pproduct {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+select#size  {
+    margin-right: 2rem;
+}
+
+#addtocartbutton {
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    text-decoration: none;
+    background-color: #7C6F61;
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+.smalltext {
+    padding-top: 3rem;
+    font-size: 0.1rem;
+    text-align: end;
+}
+
+.informationtextproduct {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    color: black;
+    text-align: justify;
+}
+
+.productinfoboxes a {
+    display: block;
+    width: 80%;
+    height: 2.5rem;
+    border: black solid 1px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+/* Legge til liten trekant/pil på slutten av diven om du får det til? Må nok legge den til, også flexe*/
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+
+.youmightalsolikeimage img {
+    max-width: 250px;
+}
+
+.youmightalsolikeimages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.img3, .img2, .img1 {
+    flex: 33.3%;
+}
+
+div.img1, div.img2, div.img3 {
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.infoimage p {
+    margin: 0%;
+}
+
+p.prize {
+    font-size: 20px;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.youmightalsolikeimage a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    background-color: #7C6F61;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+
+}
+
+/* HVA ER DEN MARGINEN PÅ SIDEN AV INFOBOKSEN???*/
+
+
+
 
 
 
