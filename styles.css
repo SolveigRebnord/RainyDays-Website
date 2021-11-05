@@ -22,7 +22,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 10vw;
+    margin-bottom: 0vw;
 }
 
 .burgermenu {
