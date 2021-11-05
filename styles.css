@@ -533,41 +533,60 @@ li {
 
 
 
+
+
 /* Footer */
 
 footer {
-    background-image: url(images.img/noah-silliman-i2J9jnvaAbU-unsplash.jpg);
+    background-image: url(images.img/jordan-k7W1jtKouM4-unsplash.jpg);
     background-size: cover;
-    padding-right: 6rem;
-    padding-left: 6rem;
     padding-top: 1rem;
-    margin-left: 0;
-    margin-right: 0;
+    height: 20rem;
+    position: relative;
 }
 
-.footerflex {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 0;
+div.menulists {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
 }
 
-.socialmedia > div {
-    
-    flex: 50%;
+.menulists > div {
+    height: 3rem;
 }
 
-.footermenu > div {
-   
-    flex: 50%;
+
+
+.aboutuslist ul, .customerservicelist ul, .productslist ul {
+    list-style: none;
+    display: inline-block;
 }
 
-div.socialmedia {
-    margin-left: 2rem;
+.aboutuslist li, .customerservicelist li, .productslist li {
+    padding-right: 0.8rem;
+    float: left;
+
 }
+
+.aboutuslist a, .customerservicelist a, .productslist a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+mark {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-right: 1rem;
+}
+
+
 
 
 
@@ -575,31 +594,20 @@ div.socialmedia {
 .fab {
 color: white;
 font-size: 2rem;
-margin-right: 2rem;
+margin-right: 1rem;
+}
+
+div.socialmedia {
+    float: right; 
+    margin-right: 2rem;
+}
+
+div.tothetop {
+    float: left;
+    margin-left: 2rem;
 }
 
 
-
-/* Meny */
-.footermenu ul {
-    list-style: none;
-    text-align: end;
-    margin: 0;
-}
-
-ul > li:last-child {
-    padding-bottom: 0;
-}
-  
-
-.footermenu a {
-    text-decoration: none;
-    font-weight: 600;
-    color: white;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
 
 
 /* Copyright */
@@ -609,12 +617,12 @@ ul > li:last-child {
     word-spacing: 2rem;
     text-align: center;
     font-size: 0.8rem;
-    padding-top: 1rem;
 }
 
 div.copyright {
     width: 100%;
     height: fit-content;
+    margin-top: 4rem;
 }
 
 /* --------------------------------ourproducts.html ------------------------------------------------------------------------------*/
