@@ -116,6 +116,7 @@ div.burgermenu {
 
 /* Usikker på om lage menyliste eller ikke. Den må i så fall inn i den flexrammen du har alt, og det fucker opp med alt*/
 
+/* Responsiveness*/
 
 /* Får ikonene til å skyves innover igjen*/
 @media screen and (max-width: 700px) {
@@ -505,6 +506,25 @@ div.bestsellerknapp {
     }
 }
 
+@media screen and (max-width: 700px) {
+    .bestsellerright img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .shopourbestsellers {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bestsellerleft img {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        
+    }
+}
 
 
 
@@ -600,6 +620,35 @@ li {
     outline-style: groove;
 }
 
+
+/*Responsiveness*/
+
+@media screen and (max-width: 600px) {
+    input#name, input#email {
+        width: 12rem;
+        height: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #newsletterformform {
+        width: 24rem;
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #newsletterformform  ul {
+    padding-left: 1rem;
+    
+}
+}
+
+@media screen and (max-width: 1180px) {
+    .imagenewsletter img {
+       display: none;
+    }
+}
 
 
 
@@ -784,6 +833,19 @@ div.copyright {
         display: none;
     }
 }
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    body, main {
+    margin: 0;
+    }
+}
+
+
 
 
 
@@ -1152,79 +1214,6 @@ p.prize {
 
 }
 
-/* HVA ER DEN MARGINEN PÅ SIDEN AV INFOBOKSEN???*/
-
-
-
-
-
-
-/* -------------------------------------Responsive --------------------------------*/
-
-
-
-
-
-/* Aner ikke hvordan jeg skal få vekk hamburgermeny, det skal hvertfall sm her begynne ved 900px */
-
-
-
-
-
-
-@media screen and (max-width: 700px) {
-    .bestsellerright img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .shopourbestsellers {
-        height: fit-content;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .bestsellerleft img {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    input#name, input#email {
-        width: 12rem;
-        height: 1.4rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #newsletterformform {
-        width: 24rem;
-        padding: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #newsletterformform  ul {
-    padding-left: 1rem;
-    
-}
-}
-
-@media screen and (max-width: 1180px) {
-    .imagenewsletter img {
-       display: none;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    body, main {
-    margin: 0;
-    }
-}
 
 
 
