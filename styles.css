@@ -538,6 +538,8 @@ div.bestsellerknapp {
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
+    margin-bottom: 5vw;
+    margin-top: 1vw;
 }
 
 div.newsletterform {
