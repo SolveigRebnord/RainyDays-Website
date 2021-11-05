@@ -605,6 +605,11 @@ div.socialmedia {
 div.tothetop {
     float: left;
     margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.tothetop a {
+    color: white;
 }
 
 
