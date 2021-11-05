@@ -1,0 +1,17 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin-left: 10rem;
+    margin-right:10rem;
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
