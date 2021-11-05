@@ -101,3 +101,123 @@ p.prizecheckout {
 
 }
 
+
+.totalamount {
+    width: 90%;
+    border: solid black 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+}
+
+.totalamount div {
+    flex: 50%;
+}
+
+.griditall {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+div.divhøyre {
+    text-align: end;
+}
+
+#total {
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+
+.youmightalsolikeimage img {
+    max-width: 250px;
+}
+
+.youmightalsolikeimages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.img3, .img2, .img1 {
+    flex: 33.3%;
+}
+
+div.img1, div.img2, div.img3 {
+    width: 160px;
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.infoimage p {
+    margin: 0%;
+}
+
+p.prize {
+    font-size: 20px;
+    padding-top: 0.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.youmightalsolikeimage a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    background-color: #7C6F61;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+
+}
+
+/* HVA ER DEN MARGINEN PÅ SIDEN AV INFOBOKSEN???*/
+
+
+
+#homelink a {
+    display: block;
+    width: 5rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    margin-top: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:837px) {
+    body {
+        margin: 0;
+    }
+}
