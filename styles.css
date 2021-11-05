@@ -22,7 +22,7 @@ header {
     background-image: url(images.img/mohamed-ziyan-ayTl3SMXCoc-unsplash.jpg);
     background-size:cover;
     position: relative;
-    height: 12vw;
+    height: 14vw;
 
     display: flex;
     flex-wrap: wrap;
@@ -64,7 +64,7 @@ img.logoheader {
 } 
 
 div.burgermenu {
-    padding: 2rem
+    padding-left: 3vw;
 }
 
 
@@ -970,13 +970,6 @@ p.prize {
 
 /*Ta vekk padding når det er under 600px */
 
-
-@media screen and (max-width: 600px) {
-    div.burgermenu {
-        padding: 0;
-        padding-left: 0.5rem;
-    }
-}
 
 
 
