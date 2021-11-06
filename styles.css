@@ -2038,6 +2038,14 @@ p.groundviewp {
     margin-right: 2vw;
 }
 
+.shippingreturns i {
+    color: black;
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+
+
+
 
 section.getintouchsection {
     width: 100%;
@@ -2089,4 +2097,83 @@ p.getintouchp {
         padding-top: 3rem;
         font-size: 2.5rem;
     }
+}
+
+
+
+
+div.divwithform {
+    width: 100%;
+    height: 26rem;
+    background-color: rgb(167, 174, 180);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+
+
+form#contactform ul {
+    padding: 0;
+}
+
+
+input#contactname, input#contactemail, input#contactnumber {
+    width: 18rem;
+    height: 3rem;
+}
+
+#contacttextarea {
+    color: grey;
+}
+
+#contactsubmit {
+    width: 10rem;
+    height: 1.5rem;
+    text-transform: uppercase;
+    background-color: #0E1619;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 2rem 2rem 2rem;
+    font-family: var(--breadfont);
+    font-size: 1rem;
+    border: none;
+}
+
+@media screen and (max-width: 565px) {
+    p.getintouchp {
+        padding: 0;
+    }
+}
+
+section.shippingreturns {
+    width: 100%;
+    height: 44rem;
+    border: solid #0E1619 1px;
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+p.shippingandreturnsheader {
+    text-align: center;
+    font-family: var(--fancyheader);
+    font-size: 1.5rem;
+}
+
+.shippingreturns ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.shippingreturns li {
+    width: 20rem;
+    border: solid 1px black;
+    padding: 1rem;
+    font-family: var(--uppercaseheader);
+    letter-spacing: 0.1rem;
 }
