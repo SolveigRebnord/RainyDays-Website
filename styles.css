@@ -1243,7 +1243,7 @@ select#size  {
     letter-spacing: 0.1rem;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .smalltext {
@@ -1311,8 +1311,6 @@ div.img1, div.img2, div.img3 {
     margin-bottom: 15vw;
 }
 
-
-
 .infoimage p {
     margin: 0%;
 }
@@ -1333,13 +1331,14 @@ p.prize {
     background-color: #7C6F61;
     color: white;
     letter-spacing: 0.1rem;
-    font-weight: 600;*/
-    
+    font-weight: 600;
 }
-   
 
 
-@media screen and (max-width: 900px) {}
+
+/*Responsiveness*/
+
+@media screen and (max-width: 900px) {
     .productsection {
         display: flex;
         flex-direction: row;
@@ -1347,13 +1346,13 @@ p.prize {
     }
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
     div.productinfo {
         flex: 50%;
     }
 }
 
-@media screen and (max-width: 900px) {}
+@media screen and (max-width: 900px) {
     div.productimages {
         flex: 50%;
     }
