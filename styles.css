@@ -32,7 +32,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
 }
 
 /*Flex oppsett*/
@@ -1171,6 +1171,7 @@ p.prize {
 
 
 /* ------------------------------------------------------product.html-----------------------------------------------------*/
+
 
 
     div.smallimages {
