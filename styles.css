@@ -1340,7 +1340,7 @@ p.prize {
 
 /*Responsiveness*/
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
     .productsection {
         display: flex;
         flex-direction: row;
@@ -1348,13 +1348,13 @@ p.prize {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
     div.productinfo {
         flex: 50%;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
     div.productimages {
         flex: 50%;
     }
