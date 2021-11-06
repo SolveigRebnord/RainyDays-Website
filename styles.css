@@ -1811,7 +1811,7 @@ img.successlogo {
 /*------------------------------------------------------About us --------------------------------------------------------*/
 
 .aboutusbody {
-background-color: #D6C8BB;
+background-color: lightgray;
 }
 .aboutusmain {
     margin: 0rem 1rem 1rem 1rem;
@@ -1894,6 +1894,99 @@ margin-right: 5rem;
 }
 
 
+div.groundview {
+    width: 86%;
+    margin: 5vw auto 0rem auto;
+    position: relative;
+}
+
+.groundview img {
+    width: 100%;
+    height: auto;
+    display: block;
+  
+}
+
+div.groundviewtext {
+    position: absolute;
+    top: 45%;
+    left: 37%;
+}
+
+p.groundviewp {
+    width: 40vw;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.groundviewtext a {
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    background-color: #7C6F61;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    box-shadow: white;
+    letter-spacing: 0.15rem;
+}
+
+
+@media screen and (max-width:900px) {
+    p.groundviewp {
+        width: 40vw;
+        line-height: 1rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+}
+
+@media screen and (max-width:700px) {
+    p.groundviewp {
+        display: none;
+    }
+    
+    div.groundviewtext {
+        position: absolute;
+        top: 45%;
+        left: 34%;
+    }
+}
+
+@media screen and (max-width:550px) {
+.groundviewtext a {
+
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: #7C6F61;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    box-shadow: white;
+}
+div.groundviewtext {
+    position: absolute;
+    top: 45%;
+    left: 34%;
+}
+}
+
+@media screen and (max-width:450px) {
+  
+    div.groundviewtext {
+        left: 32%;
+    }
+}
+
+
+
+
 @media screen and (max-width:900px) {
     .whoarewesection {
         margin: 0rem 1rem 0rem 1rem;
@@ -1919,3 +2012,4 @@ margin-right: 5rem;
         margin-right: 0;
     }
 }
+
