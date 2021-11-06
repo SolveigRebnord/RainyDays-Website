@@ -18,11 +18,45 @@ body {
 h1 {
     text-align: center;
     padding-top: 5vw;
+    font-family: var(--fancyheader);
+    font-size: 6vw;
 }
 
 a {
     color: black;
+    font-family: var(--buttonfont);
 }
+
+h2 {
+    font-family:var(--uppercaseheader);
+    font-size: 2rem;
+}
+
+p {
+    font-family: var(--breadfont);
+    font-size: 1.2rem;
+}
+
+/* VARIABLES */
+
+
+:root {
+    --buttonfont: 'Open Sans Condensed';
+}
+
+:root {
+    --breadfont: 'Open Sans Condensed';
+}
+
+:root {
+    --fancyheader: 'Lobster';
+}
+
+:root {
+    --uppercaseheader: 'Bebas Neue';
+}
+
+
 
 /* ----------------------------------------------------index.html--------------------------------------------------------------------*/
 
@@ -212,9 +246,9 @@ div.newcollectiontop {
 
 
 div.newcollectionbottom {
-width: 80%;
-margin-left: auto;
-margin-right: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .newcollectionbottom {
@@ -246,11 +280,9 @@ div.showmelink {
     border: black solid 2px;
     text-decoration: none;
     font-size: 1rem;
+    font-family: var(--buttonfont);
 }
 
-h4 {
-    font-family: fantasy;
-}
 
 
 
@@ -1992,3 +2024,40 @@ p.groundviewp {
     }
 }
 
+/*------------------------------------------------------Customer Service-----------------------------------------------------------*/
+
+
+#nr2 { 
+    font-family: 'Bebas Neue';
+    font-size: 4rem;
+}
+
+#nr5 { 
+    font-family: 'Lobster';
+    font-size: 4rem;
+}
+
+#nr7 { 
+    font-family: 'Open Sans Condensed';
+    font-size: 1rem;
+    font-weight: 500;
+}
+#nr8 { 
+    font-family: 'Shadows Into Light';
+    font-size: 0.8rem;
+}
+
+
+.cool2 a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    background-color: #7C6F61;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-family: var(--buttonfont)
+}
