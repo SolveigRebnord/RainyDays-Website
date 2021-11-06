@@ -1806,3 +1806,116 @@ img.successlogo {
     margin-right: auto;
     margin-top: 2rem;
 }
+
+
+/*------------------------------------------------------About us --------------------------------------------------------*/
+
+.aboutusbody {
+background-color: #D6C8BB;
+}
+.aboutusmain {
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.aboutusheader {
+    margin-bottom: 1rem;
+}
+
+.heroimageaboutus {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.aboutsection1, .aboutsection2, .aboutsection3  {
+    width: 80%;
+    height: 30rem;
+    background-color: #D6C8BB;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    padding: 5rem;
+}
+
+.heroimage {
+    position: relative;
+}
+
+.heroimagetext {
+    position: absolute;
+    left: 55vw;
+    top: 15vw;
+}
+
+div.heroimagetext {
+    margin-right: 10vw;
+}
+
+@media screen and (max-width:600px) {
+    div.heroimagetext {
+        display: none;
+    }
+}
+
+.whoarewesection {
+    margin: 0rem 6rem 0rem 6rem;
+}
+
+.flexthatp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+}
+
+div.whoarewediv {
+background-color: #0E1619;
+padding: 1rem;
+color: white;
+margin-top: 3rem;
+}
+
+.whoareweh3 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: fantasy;
+}
+
+
+.p1 {
+flex: 40%;
+margin-right: 5rem;
+}
+
+.p2 {
+    flex: 40%;
+}
+
+
+@media screen and (max-width:900px) {
+    .whoarewesection {
+        margin: 0rem 1rem 0rem 1rem;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .p1 {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .flexthatp {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: justify;
+    }
+    .p1 {
+        margin-right: 0;
+    }
+}
