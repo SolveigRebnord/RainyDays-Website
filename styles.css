@@ -1359,3 +1359,9 @@ p.prize {
     }
 }
 
+
+@media screen and (max-width: 416px) {
+    .productsiteimage img {
+        max-width: 300px;
+    }
+}
