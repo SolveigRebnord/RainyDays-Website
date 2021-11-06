@@ -209,7 +209,6 @@ p.prize {
 
 
 
-
 #homelink a {
     display: block;
     width: 5rem;
@@ -217,8 +216,12 @@ p.prize {
     margin-left: auto;
     margin-right: auto;
     color: black;
-    margin-top: 5rem;
 }
+
+#homelink {
+    text-align: center;
+}
+
 
 
 
