@@ -2033,6 +2033,12 @@ p.groundviewp {
 /*------------------------------------------------------Customer Service-----------------------------------------------------------*/
 
 
+.customerservicemain {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
 .getintouchright i {
     color: black;
     margin-right: 2vw;
@@ -2097,6 +2103,9 @@ p.getintouchp {
         padding-top: 3rem;
         font-size: 2.5rem;
     }
+    .customerservicemain {
+        margin: 0;
+    }
 }
 
 
@@ -2144,18 +2153,15 @@ input#contactname, input#contactemail, input#contactnumber {
     border: none;
 }
 
-@media screen and (max-width: 565px) {
-    p.getintouchp {
-        padding: 0;
-    }
-}
+
 
 section.shippingreturns {
     width: 100%;
-    height: 44rem;
+    height: fit-content;
     border: solid #0E1619 1px;
     margin-top: 3rem;
     padding: 3rem;
+    margin-bottom: 5rem;
 }
 
 p.shippingandreturnsheader {
@@ -2176,4 +2182,15 @@ p.shippingandreturnsheader {
     padding: 1rem;
     font-family: var(--uppercaseheader);
     letter-spacing: 0.1rem;
+}
+
+
+@media screen and (max-width: 565px) {
+    section.shippingreturns {
+        padding: 0.5rem;
+        margin-top: 10rem;
+    }
+    p.getintouchp {
+        padding: 0;
+    }
 }
