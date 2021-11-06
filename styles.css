@@ -1097,57 +1097,116 @@ p.prize {
 }
 
 
+
+
+/* RESPONSIVENESS - Legge det inn der det tilhører?*/
+
+@media screen and (max-width: 900px) {
+    aside.filtermenu {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productlist img {
+       width: 10rem;
+    }
+}
+
+@media screen and (max-width: 447px) {
+    .productlist img {
+       width: 9rem;
+    }
+}
+
+@media screen and (max-width: 447px) {
+    div.infoimage  {
+       width: 112px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    div.infoimage  {
+       width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .navmenu > nav {
+       display: none;
+    }
+} /* FUnker ikke, får ikke vekk menyen */
+
+
+@media screen and (max-width: 768px) {
+    .infoimage a {
+       padding: 0.3rem 1rem 0.3rem 1rem;
+       font-size: 0.8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .pagebutton-desktop {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pagebutton-mobil {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    div.copyright {
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
 /* ------------------------------------------------------product.html-----------------------------------------------------*/
 
-.productsection {
+
+    div.smallimages {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+}
+
+
+div.productimages {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2vw;
 }
 
-.productimages {
-    flex: 50%;
-}
-
-.productinfo {
-    flex: 50%;
-    display: block;
-}
 
 
 .smallimages img {
-    width: 170px;
-    height: 160px;
-    overflow: hidden;
-    display: block;
-    padding-bottom: 15px;
+    flex: 33.3%;
+    width: 100px;
+    height: auto;
+    display: inline-block;
 }
 /* Legg inn hover over bildene!*/
 
 
-.smallimages img:last-child {
-    padding-bottom: 0;
-}
 
 .productsiteimage img {
     max-width: 400px;
     display: block;
-}
-
-.productimages {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.smallimages {
-    flex: 30%;
-}
-
-.productsiteimage {
-    flex: 70%;
 }
 
 
@@ -1271,82 +1330,26 @@ p.prize {
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
-
 }
 
 
-
-
-/* ---------------------------------Our products ------------------- */
-
-@media screen and (max-width: 900px) {
-    aside.filtermenu {
-       display: none;
+@media screen and (max-width: 900px) {}
+    .productsection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .productlist img {
-       width: 10rem;
+@media screen and (max-width: 900px) {}
+    div.productinfo {
+        flex: 50%;
     }
 }
 
-@media screen and (max-width: 447px) {
-    .productlist img {
-       width: 9rem;
+@media screen and (max-width: 900px) {}
+    div.productimages {
+        flex: 50%;
     }
 }
-
-@media screen and (max-width: 447px) {
-    div.infoimage  {
-       width: 112px;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    div.infoimage  {
-       width: 320px;
-    }
-}
-
-
-@media screen and (min-width: 769px) {
-    .navmenu > nav {
-       display: none;
-    }
-} /* FUnker ikke, får ikke vekk menyen */
-
-
-@media screen and (max-width: 768px) {
-    .infoimage a {
-       padding: 0.3rem 1rem 0.3rem 1rem;
-       font-size: 0.8rem;
-    }
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    .pagebutton-desktop {
-       display: none;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .pagebutton-mobil {
-       display: none;
-    }
-}
-
-@media screen and (max-width: 1090px) {
-    div.copyright {
-        margin-top: 1rem;
-    }
-}
-
-
 
