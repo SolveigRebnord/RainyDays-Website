@@ -1725,3 +1725,84 @@ div.termsandconditions a {
         margin: 0;
     }
 }
+
+
+
+/*-----------------------------------------------------Success----------------------------------------------------------*/
+
+
+.successmain {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width:837px) {
+    .successmain {
+        margin: 0.6rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section.orderinfo {
+        padding: 2rem;
+    }
+}
+
+
+.orderinfo {
+    background-color: #dbcebd;
+    padding: 4rem;
+}
+
+.headline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.orderinfo p {
+    margin-bottom: 2rem;
+}
+
+p.number {
+    margin-bottom: 3rem;
+}
+
+p.smalltextsuccess {
+    margin-bottom: 4rem;
+}
+
+.orderinfo a {
+    color: black;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.furtherinfo {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.furtherinfo a {
+    color: black;
+}
+
+.orderlink {
+    padding-bottom: 2rem;
+}
+
+
+img.successlogo {
+    display: block;
+    width: 6rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
