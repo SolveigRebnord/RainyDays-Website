@@ -85,6 +85,13 @@ img.successlogo {
 }
 
 
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
 
 .youmightalsolikeimage img {
     max-width: 250px;
@@ -107,6 +114,9 @@ div.img1, div.img2, div.img3 {
     height: 150px;
     text-align: center;
     padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15vw;
 }
 
 .infoimage p {
@@ -122,18 +132,27 @@ p.prize {
 
 .youmightalsolikeimage a {
     display: inline-block;
-    text-decoration: none;
-    font-family: monospace;
     text-transform: uppercase;
-    font-size: 1.4rem;
-    padding: 0.7rem 3rem 0.7rem 3rem;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
     background-color: #7C6F61;
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
 }
 
-.successline {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+
+
+#homelink a {
+    display: block;
+    width: 5rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+#homelink {
+    text-align: center;
 }
