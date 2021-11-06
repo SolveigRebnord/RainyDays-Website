@@ -20,6 +20,10 @@ h1 {
     padding-top: 5vw;
 }
 
+a {
+    color: black;
+}
+
 /* ----------------------------------------------------index.html--------------------------------------------------------------------*/
 
 /* Header */
@@ -1911,7 +1915,7 @@ div.groundview {
 div.groundviewtext {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 25%;
 }
 
 p.groundviewp {
