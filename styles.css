@@ -901,10 +901,10 @@ div.copyright {
 
 /* Sette opp grid og flex */
 .gridforhele {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 'aside.filtermenu' 'section.productlist' 'section.productlist' 'section.productlist';
     margin-top: 10vw;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 aside.filtermenu {
@@ -912,7 +912,6 @@ aside.filtermenu {
     background-color: white;
     border: solid black 2px;
     padding: 3vw 1vw 3vw 1vw;
-    flex: 20%;
     width: fit-content;
     margin-right: 1rem;
 }
@@ -921,23 +920,18 @@ aside.filtermenu ul {
     padding: 0;
 }
 
-section.productlist {
-    flex: 80%;
-}
-
 aside {
    
     height: fit-content;
 }
 
 
-
-.productlist section {
+section.productlist {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
 }
 
 
@@ -1161,29 +1155,35 @@ p.prize {
     }
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 766px) {
     .productlist img {
-       width: 10rem;
+       width: 15rem;
+    }
+
+    div.infoimage {
+        width: 15rem;
+     }
+
+     section.productlist {
+        justify-content: space-around;
     }
 }
 
-@media screen and (max-width: 447px) {
+@media screen and (max-width: 580px) {
     .productlist img {
        width: 9rem;
     }
+    div.infoimage {
+        width: 9rem;
+     }
+
 }
 
-@media screen and (max-width: 447px) {
-    div.infoimage  {
-       width: 112px;
-    }
-}
 
-@media screen and (min-width: 769px) {
-    div.infoimage  {
-       width: 320px;
-    }
-}
+
+
 
 
 @media screen and (min-width: 769px) {
