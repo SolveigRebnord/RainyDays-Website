@@ -1748,6 +1748,10 @@ input#agree {
     margin-top: 2rem;
 }
 
+#checkoutform {
+    font-family: var(--breadfont);
+    font-size: 1.4rem;
+}
 
 div.termsandconditions a {
    color: black;
