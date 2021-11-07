@@ -901,24 +901,64 @@ div.copyright {
 
 /* Sette opp grid og flex */
 .gridforhele {
-    display: grid;
-    grid-template-areas: 'aside section section';
-    gap: 2vw;
+    display: flex;
+    flex-direction: row;
     margin-top: 10vw;
+    justify-content: center;
 }
 
 aside.filtermenu {
-    display: block;
+    display: inline-block;
     background-color: white;
     border: solid black 2px;
     padding: 3vw 1vw 3vw 1vw;
+    flex: 20%;
+    width: fit-content;
+    margin-right: 1rem;
+}
+
+aside.filtermenu ul {
+    padding: 0;
+}
+
+section.productlist {
+    flex: 80%;
 }
 
 aside {
-    width: 250px;
-    margin-right: 20px;
+   
     height: fit-content;
 }
+
+
+
+.productlist section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/*Product - høyre siden*/
+
+.productlist img {
+    width: 18rem;
+    height: auto;
+    display: block;
+}
+
+div.infoimage {
+    width: fit-content;
+}
+
+
+
+
+
+
 
 /*Styling*/
 
@@ -963,31 +1003,8 @@ letter-spacing: 0.05rem;
 
 
 
-/*Product - høyre siden*/
 
-.productlist img {
-    width: 18rem;
-    height: auto;
-    display: block;
-}
 
-div.infoimage {
-    width: fit-content;
-}
-
-.productlist section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-.productlist {
-    align-items: center;
-    justify-content: space-around;
-}
 
 div.productcol {
     display: inline-block;
@@ -1138,7 +1155,7 @@ p.prize {
 
 /* RESPONSIVENESS - Legge det inn der det tilhører?*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1292px) {
     aside.filtermenu {
        display: none;
     }
@@ -1494,7 +1511,7 @@ p.prizecheckout {
 }
 
 
-p.smalltext {
+p.totalsmalltext {
 font-size: 0.6rem;
 }
 
@@ -1544,7 +1561,7 @@ div.continueasguest {
     p#total {
         margin-bottom: 0;
     }
-    p.smalltext {
+    p.totalsmalltext {
         margin-top: 0;
     }
 }
@@ -1565,17 +1582,24 @@ section.buyerdetails {
     padding: 2rem;
 }
 
+.shippingp {
+    display: block;
+    padding-bottom: 1rem;
+}
+
 #zipcode {
     width: 6rem;
     height: 3rem;
     text-align: center;
     margin-right: 1rem;
+    display: block;
+    margin-left: 4.5rem;
 }
 
 a#loadshoppingalternatives {
     text-align: center;
-    width: 11rem;
-    height: 4rem;
+    width: 15rem;
+    height: 3rem;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -1585,6 +1609,7 @@ a#loadshoppingalternatives {
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
+    display: block;
 }
 
 @media screen and (max-width: 400px) {
@@ -1602,7 +1627,16 @@ a#loadshoppingalternatives {
         letter-spacing: 0.1rem;
         font-weight: 600;
     }
+}
 
+@media screen and (max-width: 398px) {
+    a#loadshoppingalternatives {
+        width: 13rem;
+        height: 2rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        font-size: 0.7rem;
+        display: block;
+    }
 }
 
 
@@ -1615,7 +1649,7 @@ a#loadshoppingalternatives {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.8rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 1rem 1rem 1em 1rem;
     background-color: black;
     color: white;
     letter-spacing: 0.1rem;
@@ -1628,6 +1662,7 @@ div.continueasguest {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
+    text-align: center;
 }
 
 
@@ -2109,8 +2144,6 @@ p.getintouchp {
 }
 
 
-
-
 div.divwithform {
     width: 100%;
     height: 26rem;
@@ -2193,4 +2226,12 @@ p.shippingandreturnsheader {
     p.getintouchp {
         padding: 0;
     }
+}
+
+
+#checkmark {
+    color: black;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: grey;
 }
