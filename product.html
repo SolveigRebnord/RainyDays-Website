@@ -13,42 +13,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400;600&family=Dancing+Script:wght@400;700&family=Lobster&family=Mohave:wght@300;400;500;600;700&family=Open+Sans+Condensed:wght@300;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-<!--
-font-family: 'Mohave', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Open Sans Condensed', sans-serif;-->
 
 
-
-
-    <script src="https://kit.fontawesome.com/ecce34c200.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="High quality rain jackets for the modern and style conscious aventurer">
-    <!--Legg til mer i despription-->
-    <title>Product Page | RainyDays </title>
+<script src="https://kit.fontawesome.com/ecce34c200.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="High quality rain jackets for the modern and style conscious aventurer">
+<!--Legg til mer i despription-->
+<title>Product | RainyDays </title>
 </head>
+
+
 
 <!--Header-->
 <header>
 
 
+    <nav class="headermenu">
+        <ul>
+        <li><a href="ourproducts.html">Our Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Customer Service</a></li>
+        </ul>
+    </nav>
+    
+    
+    
     <div class="burgermenu">
         <label for="hamburgermenu">
             <i class="fas fa-bars"></i>
         </label>
         <input type="checkbox" name="hamburgermenu" id="hamburgermenu">
         <nav class="hamburgermenu">
-        <ul class="headermenu">
+        <ul class="headermenuburger">
             <li><a href="ourproducts.html">Our Products</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Customer Service</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
         </ul>
         </nav>
+    
+    
     </div>
+    
+    
     
     <div class="logoheaderdiv">
     <a href="index.html"><img class="logoheader" src="images.img/Mask Group.png" alt="RainyDays_Logo"></a>
@@ -56,8 +65,9 @@ font-family: 'Open Sans Condensed', sans-serif;-->
     
     
     <div class="icons">
-        <a href="index.html" class="shoppingbag"><i class="fas fa-shopping-bag"></i></a>
-        <input class="search" type="search" placeholder="search...">
+        <a href="shoppingcart.html" class="shoppingbag"><i class="fas fa-shopping-bag"></i></a>
+        <a href="index.html" class="account"><i class="fas fa-user-circle"></i></a>
+        <input id="searchplaceholder" class="search" type="search" placeholder="search...">
         <i id="searchicon" class="fas fa-search"></i>
     
     </div>
@@ -65,30 +75,33 @@ font-family: 'Open Sans Condensed', sans-serif;-->
     </header>
 
 <body>
-    <main>
+    
+<main>
+
+
 
 <section class="productsection">
 
 
-<div class="productimages">
+    <div class="productimages">
     
 
-    <div class="productsiteimage"> <img src="images.img/marcus-santos-TeR7ekawHeU-unsplash.jpg" alt="Girl in yellow raincoat"></div>
+        <div class="productsiteimage"> <img src="images.img/marcus-santos-TeR7ekawHeU-unsplash.jpg" alt="Girl in yellow raincoat"></div>
 
-    <div class="smallimages"> 
+        <div class="smallimages"> 
         <div><img src="images.img/marcus-santos-TeR7ekawHeU-unsplash-kopi.jpg" alt="Girl in yellow raincoat"></div>
         <div><img src="images.img/marcus-santos-TeR7ekawHeU-unsplash-kopi.jpg" alt="Girl in yellow raincoat"></div>
         <div><img src="images.img/marcus-santos-TeR7ekawHeU-unsplash-kopi.jpg" alt="Girl in yellow raincoat"></div>
+        </div>
     </div>
-</div>
 
 
 
 
-<div class="productinfo">
-    <h2 class="h2product">Product Name</h2>
-    <p class="pproduct">1900 NOK</p>
-    <form class="productchoices" action="#" method="get"> 
+    <div class="productinfo">
+        <h2 class="h2product">Product Name</h2>
+        <p class="pproduct">1900 NOK</p>
+        <form class="productchoices" action="#" method="get"> 
         <label for="size">Choose Size</label> 
         <select name="size" id="size">
             <option value="XS">XS</option>
@@ -105,26 +118,29 @@ font-family: 'Open Sans Condensed', sans-serif;-->
             <option value="beige">Beige</option>
             <option value="blue">Blue</option>
         </select>
-    </form>
+        </form>
 
-    <br><br>
 
-    <a id="addtocartbutton" href="index.html"> Add To Cart</a>
 
-    <div class="smalltext">
-        <p><i id="checkmark" class="fas fa-check"></i>Free Shipping (total over 900NOK) </p>
-        <p><i id="checkmark" class="fas fa-check"></i>Custom Free</p> 
+        <a id="addtocartbutton" href="shoppingcart.html"> Add To Cart</a>
+
+        <div class="smalltext">
+            <p><i id="checkmark" class="fas fa-check"></i>Free Shipping (total over 900NOK) </p>
+            <p><i id="checkmark" class="fas fa-check"></i>Custom Free</p> 
+        </div>
+
+        <p class="informationtextproduct">Cool text about jacket and material and shit lorem loremlomren lormen  Cool text about jacket and material and shit lorem loremlomren Cool text about jacket and ma lorm terial and shit lorem loremlomren Cool text about jacket and material and shit lorem loremlomren Cool text about jacket and material and shit lorem loremlomren </p>
+
+        <div class="productinfoboxes">
+            <div><a href="product.html">Specifications</a></div>
+            <div><a href="product.html">Material</a> </div>
+        </div>
+    
     </div>
-
-    <p class="informationtextproduct">Cool text about jacket and material and shit lorem loremlomren lormen  Cool text about jacket and material and shit lorem loremlomren Cool text about jacket and ma lorm terial and shit lorem loremlomren Cool text about jacket and material and shit lorem loremlomren Cool text about jacket and material and shit lorem loremlomren </p>
-
-    <div class="productinfoboxes">
-        <div><a href="product.html">Specifications</a></div>
-        <div><a href="product.html">Material</a> </div>
-    </div>
-</div>
 
 </section>
+
+
 
 <h3>You might also like:</h3>
 
@@ -163,6 +179,7 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 
 </main>
 
+
 <!--Footer-->
 <footer class="footer">
 
@@ -172,19 +189,19 @@ font-family: 'Open Sans Condensed', sans-serif;-->
         <div class="aboutuslist">
         <ul>
             <li><mark>About Us </mark></li>
-            <li> <a href="index.html">Contact</a></li>
-            <li> <a href="index.html">Our Vision</a></li>
-            <li> <a href="index.html">Who are we?</a></li>
-            <li> <a href="index.html">Work with us</a></li>
+            <li> <a href="customerservice.html">Contact</a></li>
+            <li> <a href="aboutus.html">Our Vision</a></li>
+            <li> <a href="aboutus.html">Who are we?</a></li>
+            <li> <a href="aboutus.html">Work with us</a></li>
          </ul>
         </div>
 
         <div class="customerservicelist">
         <ul>
             <li><mark>Customer Service </mark></li>
-            <li> <a href="index.html">FAQ</a></li>
-            <li> <a href="index.html">Shipping & Returns</a></li>
-            <li> <a href="index.html">Terms & Conditions</a></li>
+            <li> <a href="customerservice.html">FAQ</a></li>
+            <li> <a href="customerservice.html">Shipping & Returns</a></li>
+            <li> <a href="customerservice.html">Terms & Conditions</a></li>
          </ul>
         </div>
 
@@ -210,11 +227,12 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 
 
 
-                                     <!--Mobil-->
+ <!--Mobil-->
+
 <div class="menumobil">
     <ul class="menumobilul">
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="index.html">Customer Service</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Customer Service</a></li>
         <li><a href="ourproducts.html">Our Products</a></li>
     </ul>
 </div>
@@ -229,10 +247,7 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 <div class="tothetopmobil"><a href="index.html">To the Top</a></div>
 
 
-<div class="copyright"> <p>&copy;RainyDays2021</p></div>
 </footer>
-
-
 
 </body>
 

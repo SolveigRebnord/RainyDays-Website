@@ -9,14 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400;600&family=Dancing+Script:wght@400;700&family=Lobster&family=Mohave:wght@300;400;500;600;700&family=Open+Sans+Condensed:wght@300;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <!--
-font-family: 'Mohave', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Lobster', cursive;
-font-family: 'Open Sans Condensed', sans-serif;-->
-
-
-
 
     <script src="https://kit.fontawesome.com/ecce34c200.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
@@ -36,19 +28,33 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 <header>
 
 
+    <nav class="headermenu">
+        <ul>
+        <li><a href="ourproducts.html">Our Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Customer Service</a></li>
+        </ul>
+    </nav>
+    
+    
+    
     <div class="burgermenu">
         <label for="hamburgermenu">
             <i class="fas fa-bars"></i>
         </label>
         <input type="checkbox" name="hamburgermenu" id="hamburgermenu">
         <nav class="hamburgermenu">
-        <ul class="headermenu">
+        <ul class="headermenuburger">
             <li><a href="ourproducts.html">Our Products</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Customer Service</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
         </ul>
         </nav>
+    
+    
     </div>
+    
+    
     
     <div class="logoheaderdiv">
     <a href="index.html"><img class="logoheader" src="images.img/Mask Group.png" alt="RainyDays_Logo"></a>
@@ -57,12 +63,14 @@ font-family: 'Open Sans Condensed', sans-serif;-->
     
     <div class="icons">
         <a href="shoppingcart.html" class="shoppingbag"><i class="fas fa-shopping-bag"></i></a>
-        <input class="search" type="search" placeholder="search...">
+        <a href="index.html" class="account"><i class="fas fa-user-circle"></i></a>
+        <input id="searchplaceholder" class="search" type="search" placeholder="search...">
         <i id="searchicon" class="fas fa-search"></i>
     
     </div>
     
-    </header>
+</header>
+
 
 <main class="successmain">
 
@@ -136,19 +144,19 @@ font-family: 'Open Sans Condensed', sans-serif;-->
         <div class="aboutuslist">
         <ul>
             <li><mark>About Us </mark></li>
-            <li> <a href="index.html">Contact</a></li>
-            <li> <a href="index.html">Our Vision</a></li>
-            <li> <a href="index.html">Who are we?</a></li>
-            <li> <a href="index.html">Work with us</a></li>
+            <li> <a href="customerservice.html">Contact</a></li>
+            <li> <a href="aboutus.html">Our Vision</a></li>
+            <li> <a href="aboutus.html">Who are we?</a></li>
+            <li> <a href="aboutus.html">Work with us</a></li>
          </ul>
         </div>
 
         <div class="customerservicelist">
         <ul>
             <li><mark>Customer Service </mark></li>
-            <li> <a href="index.html">FAQ</a></li>
-            <li> <a href="index.html">Shipping & Returns</a></li>
-            <li> <a href="index.html">Terms & Conditions</a></li>
+            <li> <a href="customerservice.html">FAQ</a></li>
+            <li> <a href="customerservice.html">Shipping & Returns</a></li>
+            <li> <a href="customerservice.html">Terms & Conditions</a></li>
          </ul>
         </div>
 
@@ -177,8 +185,8 @@ font-family: 'Open Sans Condensed', sans-serif;-->
                                      <!--Mobil-->
 <div class="menumobil">
     <ul class="menumobilul">
-        <li><a href="index.html">About Us</a></li>
-        <li><a href="index.html">Customer Service</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Customer Service</a></li>
         <li><a href="ourproducts.html">Our Products</a></li>
     </ul>
 </div>
@@ -192,9 +200,8 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 
 <div class="tothetopmobil"><a href="index.html">To the Top</a></div>
 
-
-<div class="copyright"> <p>&copy;RainyDays2021</p></div>
 </footer>
+
 
 </body>
 

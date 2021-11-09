@@ -37,6 +37,13 @@ p {
 /* VARIABLES */
 
 
+/*
+font-family: 'Mohave', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans Condensed', sans-serif;*/
+
+
 :root {
     --buttonfont: 'Open Sans Condensed';
 }
@@ -51,6 +58,15 @@ p {
 
 :root {
     --uppercaseheader: 'Bebas Neue';
+}
+
+mark {
+    font-family: var(--uppercaseheader);
+    font-size: 2rem;
+}
+
+form {
+    font-family: var(--buttonfont);
 }
 
 
@@ -96,8 +112,6 @@ div.icons {
   padding-left: 7vw;
 }
 
-
-/*Style logo*/
 img.logoheader {
     width: 12vw;
     height: auto;
@@ -105,8 +119,6 @@ img.logoheader {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 .headermenu ul {
     list-style: none;
@@ -128,8 +140,6 @@ img.logoheader {
     font-weight: 600;
     font-family: var(--buttonfont);
 }
-
-
 
 
 
@@ -160,10 +170,6 @@ div.burgermenu {
     padding: 2rem;
 }
 
-
-
-
-
 .hamburgermenu ul li {
     border: solid white 0.1rem;
     margin-bottom: 1rem;
@@ -175,7 +181,6 @@ div.burgermenu {
     margin-bottom: 0;
 }
 
-
 .hamburgermenu li a {
     text-decoration: none;
     color:white;
@@ -185,7 +190,6 @@ div.burgermenu {
    font-family: var(--buttonfont);
     font-size: 1rem;
 }
-
 
 
 /* Ikoner + search */
@@ -204,37 +208,14 @@ div.burgermenu {
   border:none;
   border-bottom: white solid 2px;
 }
-
-
 .account {
     margin-right: 2rem;
 }
 
 
 
-
-@media screen and (max-width:1262px) {
-    .headermenu {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width:1262px) {
-    .burgermenu {
-        display: none;
-    }
-}
-
-
-
-
-
-
 /* Responsiveness*/
 
-
-/*Ta vekk padding når det er under 600px */
 
 
 @media screen and (min-width: 1262px) {
@@ -259,6 +240,26 @@ div.burgermenu {
     }
 }
 
+
+
+
+@media screen and (max-width:1262px) {
+    .headermenu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1262px) {
+    .burgermenu {
+        display: none;
+    }
+}
+
+
+
+
+/*Dette er dårlig forsøk på å holde denne linjen ben, får ikke til at det er venstrejustert inni diven..*/
 
 
 @media screen and (max-width: 1060px) {
@@ -292,6 +293,7 @@ div.burgermenu {
 
 
 
+
 /* New collection */
 
 .cityimage img {
@@ -308,7 +310,6 @@ div.burgermenu {
     margin-left: auto;
 }
 
-
 .newcollectiontop {
     display: flex;
     flex-wrap: wrap;
@@ -316,7 +317,6 @@ div.burgermenu {
     align-items: center;
     margin-top: 4rem;
 }
-
 
 div.collectiontext {
     width: 50%;
@@ -346,7 +346,6 @@ div.newcollectionbottom {
     margin-bottom: 7vw;
 }
 
-
 div.showmelink {
     text-align: end;
     width: 161.19px;
@@ -371,6 +370,7 @@ div.showmelink {
 }
 
 
+/*Responsiveness*/
 @media screen and (max-width: 1310px) {
     
 .cityimage img {
@@ -433,14 +433,14 @@ div.showmelink {
 
 
 
-/* Shop Woman */
+/* Shop Woman og Man */
 
-.imageshopwoman img {
+.imageshopwoman img, .imageshopman img {
     width: 100%;
     height: auto;
 }
 
-.buttonshopwoman a {
+.buttonshopwoman a, .buttonshopman a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -450,7 +450,7 @@ div.showmelink {
     border: solid white;
 }
 
-section.shopwoman {
+section.shopwoman, section.shopman {
     position: relative;
     width: 100%;
     margin-bottom: 4rem;
@@ -462,35 +462,10 @@ div.buttonshopwoman {
     right: 12%
 }
 
-div.buttonshopwoman :hover {
+div.buttonshopwoman :hover, div.buttonshopman :hover {
     background-color: silver;
     color: black;
-    } 
-
-
-
-/* Shop Man */
-
-.imageshopman img {
-    width: 100%;
-    height: auto;
-}
-
-.buttonshopman a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1vw;
-    font-size: 1.5vw;
-    padding: 1.5vw;
-    border: solid white;
-}
-
-section.shopman {
-    position: relative;
-    width: 100%;
-    margin-bottom: 4rem;
-}
+ } 
 
 div.buttonshopman {
     position: absolute;
@@ -498,10 +473,6 @@ div.buttonshopman {
     left: 12%
 }
 
-div.buttonshopman :hover {
-background-color: silver;
-color: black;
-} 
 
 
 
@@ -544,7 +515,6 @@ a.linkcategory {
     font-size: 1rem;
     letter-spacing: 0.1rem;
 }
-
 
 div.shopbycategorytext {
     margin-bottom: 4rem;
@@ -920,11 +890,6 @@ div.tothetop {
 
 
 
-
-
-
-
-
 /* Responsiveness*/
 @media screen and (max-width: 1090px) {
     .menulists {
@@ -973,10 +938,10 @@ div.tothetop {
 
 
 
-/* --------------------------------ourproducts.html ------------------------------------------------------------------------------*/
+/* ------------------------------------------------ourproducts.html --------------------------------------------------------------------*/
 
 
-/* Sette opp grid og flex */
+
 .gridforhele {
     display: grid;
     grid-template-areas: 'aside.filtermenu' 'section.productlist' 'section.productlist' 'section.productlist';
@@ -1027,10 +992,6 @@ aside {
     height: fit-content;
 }
 
-
-
-
-
 section.productlist {
     display: flex;
     flex-direction: row;
@@ -1039,10 +1000,6 @@ section.productlist {
     gap: 1rem;
 
 }
-
-
-
-/*Product - høyre siden*/
 
 .productlist img {
     width: 18rem;
@@ -1053,11 +1010,6 @@ section.productlist {
 div.infoimage {
     width: fit-content;
 }
-
-
-
-
-
 
 
 /*Styling*/
@@ -1102,10 +1054,6 @@ letter-spacing: 0.05rem;
 
 
 
-
-
-
-
 div.productcol {
     display: inline-block;
     padding-bottom: 1rem;
@@ -1122,8 +1070,6 @@ div.infoimage {
 }
 
 
-
-/* Style infotext og knapp */
 
 .infoimage p {
     margin: 0%;
@@ -1151,8 +1097,6 @@ p.prize {
 }
 
 
-/* Page Button -------------------------------------*/
-
 
 .pagebutton-desktop {
     display: flex;
@@ -1160,9 +1104,6 @@ p.prize {
     align-items: center;
 }
 
-
-
-/* Desktop */
 .pagebutton-desktop a { 
     display: block;
     text-decoration: none;
@@ -1196,9 +1137,6 @@ p.prize {
     background-color: black;
     color: white;
 }
-
-/*Hvordan får jeg dette til å bare være buttons, altså a??*/
-
 
 
 /* Mobil */
@@ -1253,17 +1191,13 @@ p.prize {
 
 
 
-/* RESPONSIVENESS - Legge det inn der det tilhører?*/
+/* Responsiveness*/
 
 @media screen and (max-width: 1250px) {
     aside.filtermenu {
        display: none;
     }
 }
-
-
-
-
 
 @media screen and (max-width: 766px) {
     .productlist img {
@@ -1289,18 +1223,6 @@ p.prize {
 
 }
 
-
-
-
-
-
-@media screen and (min-width: 769px) {
-    .navmenu > nav {
-       display: none;
-    }
-} /* FUnker ikke, får ikke vekk menyen */
-
-
 @media screen and (max-width: 768px) {
     .infoimage a {
        padding: 0.3rem 1rem 0.3rem 1rem;
@@ -1322,11 +1244,6 @@ p.prize {
     }
 }
 
-
-
-@media screen and (max-width:1929) {
-    
-}
 
 
 
@@ -1437,11 +1354,9 @@ select#size  {
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    font-family: sans-serif;
     letter-spacing: 0.1rem;
 }
 
-/* Legge til liten trekant/pil på slutten av diven om du får det til? Må nok legge den til, også flexe*/
 
 h3 {
     font-size: 1.5rem;
@@ -1567,18 +1482,17 @@ div.checkoutinfo {
     color: white;
 }
 
-#x {
-color: white;
-text-decoration: none;
-padding: 0.5rem;
-border: solid 1px white;
-margin-right: 2rem;
-display: block;
-width: 2rem;
-height: 2rem;
-margin-top: 2rem;
-float: right;
-
+    #x {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+        border: solid 1px white;
+        margin-right: 2rem;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin-top: 2rem;
+        float: right;
 }
 
 .addremove a {
@@ -1598,7 +1512,6 @@ float: right;
     font-size: 0.8rem;
 }
 
-/* Har har du eksemel på når det funker foran og bak klasse, er det pga inline/block?*/
 div.addremove {
     
     width: fit-content;
@@ -1606,8 +1519,6 @@ div.addremove {
     margin-left: 5rem;
     margin-top: 2rem;
     display: inline;
-   
-
 }
 
 p.prizecheckout {
@@ -1618,9 +1529,7 @@ p.prizecheckout {
     margin-right: 1.5rem;
     float: right;
     margin-bottom: 2rem;
-
 }
-
 
 p.totalsmalltext {
 font-size: 0.6rem;
@@ -1662,23 +1571,6 @@ div.continueasguest {
 }
 
 
-
-
-
-@media screen and (max-width: 600px) {
-    div.checkoutinfo, div.addremove, .checkoutimage img {
-        margin-left: 1rem;
-    }
-    p#total {
-        margin-bottom: 0;
-    }
-    p.totalsmalltext {
-        margin-top: 0;
-    }
-}
-
-
-/*::::::::::::::::::::::::::::::*/
 
 section.buyerdetails {
     display: flex;
@@ -1722,9 +1614,6 @@ a#loadshoppingalternatives {
     font-weight: 600;
     display: block;
 }
-
-
-
 
 
 #continueasguest {
@@ -1848,7 +1737,7 @@ div.termsandconditions a {
     width: 15rem;
     height: 3rem;
     text-decoration: none;
-    background-color: rgb(103, 103, 145);
+    background-color: #0E1619;
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
@@ -1880,6 +1769,20 @@ div.termsandconditions a {
 
 
 
+/*Responsiveness*/
+
+@media screen and (max-width: 600px) {
+    div.checkoutinfo, div.addremove, .checkoutimage img {
+        margin-left: 1rem;
+    }
+    p#total {
+        margin-bottom: 0;
+    }
+    p.totalsmalltext {
+        margin-top: 0;
+    }
+}
+
 
 @media screen and (max-width:837px) {
     .shoppingcartmain {
@@ -1896,19 +1799,6 @@ div.termsandconditions a {
     margin-left: 5rem;
     margin-right: 5rem;
 }
-
-@media screen and (max-width:837px) {
-    .successmain {
-        margin: 0.6rem;
-    }
-}
-
-@media screen and (max-width:600px) {
-    section.orderinfo {
-        padding: 2rem;
-    }
-}
-
 
 .orderinfo {
     background-color: #dbcebd;
@@ -1969,6 +1859,20 @@ img.successlogo {
 }
 
 
+
+@media screen and (max-width:837px) {
+    .successmain {
+        margin: 0.6rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section.orderinfo {
+        padding: 2rem;
+    }
+}
+
+
 /*------------------------------------------------------About us --------------------------------------------------------*/
 
 .aboutusbody {
@@ -2017,12 +1921,6 @@ div.heroimagetext {
 
 q {
     font-size: 1.5rem;
-}
-
-@media screen and (max-width:780px) {
-    div.heroimagetext {
-        display: none;
-    }
 }
 
 .whoarewesection {
@@ -2107,6 +2005,11 @@ p.groundviewp {
     letter-spacing: 0.15rem;
 }
 
+@media screen and (max-width:780px) {
+    div.heroimagetext {
+        display: none;
+    }
+}
 
 @media screen and (max-width:1000px) {
     p.groundviewp {
@@ -2121,14 +2024,6 @@ p.groundviewp {
     }
     
 }
-
-/*HVORDAN FÅ OUR PRODUCTS BUTTON TIL Å MIDTSTILLE SEG HELE VEIEN DA??
-@media screen and (max-width:700px) {
-
-}
-*/
-
-
 
 
 @media screen and (max-width:600px) {
@@ -2183,9 +2078,6 @@ p.groundviewp {
     margin-left: 2px;
 }
 
-
-
-
 section.getintouchsection {
     width: 100%;
     height: 30rem;
@@ -2227,20 +2119,6 @@ p.getintouchp {
     font-size: 0.8rem;
 }
 
-@media screen and (max-width:650px) {
-    div.divwithimage {
-        display: flex;
-        flex-direction: column;
-    }
-    p.getintouchp {
-        padding-top: 3rem;
-        font-size: 2.5rem;
-    }
-    .customerservicemain {
-        margin: 0;
-    }
-}
-
 
 div.divwithform {
     width: 100%;
@@ -2254,8 +2132,6 @@ div.divwithform {
     margin-top: 3rem;
     padding: 2rem;
 }
-
-
 
 form#contactform ul {
     padding: 0;
@@ -2316,6 +2192,27 @@ p.shippingandreturnsheader {
 }
 
 
+#checkmark {
+    color: black;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: grey;
+}
+
+@media screen and (max-width:650px) {
+    div.divwithimage {
+        display: flex;
+        flex-direction: column;
+    }
+    p.getintouchp {
+        padding-top: 3rem;
+        font-size: 2.5rem;
+    }
+    .customerservicemain {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 565px) {
     section.shippingreturns {
         padding: 0.5rem;
@@ -2324,12 +2221,4 @@ p.shippingandreturnsheader {
     p.getintouchp {
         padding-top: 2rem;
     }
-}
-
-
-#checkmark {
-    color: black;
-    font-size: 0.8rem;
-    margin-right: 0.5rem;
-    color: grey;
 }
