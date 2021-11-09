@@ -153,7 +153,8 @@ div.burgermenu {
 .hamburgermenu ul {
     list-style: none;
     display: inline-block;
-    width: 280px;
+    width: 340px;
+    margin-bottom: 0;
     background-color: #7C6F61;
     padding: 2rem;
 }
@@ -183,6 +184,7 @@ div.burgermenu {
    font-family: var(--buttonfont);
     font-size: 1rem;
 }
+
 
 
 /* Ikoner + search */
@@ -972,14 +974,28 @@ aside.filtermenu, div.filtermenuinburger {
     margin-right: 1rem;
 }
 
+div.filtermenuinburger {
+    margin-right: 0;
+    width: 340px;
+}
+
+.filtermenuinburger div {
+    margin-bottom: 1rem;
+}
+
 div.filtermenuinburger ul {
     background-color: lightgray;
     border: #0E1619 solid 1px;
+    width: 300px;
 }
 
 div.filtermenuinburger li {
     text-align: left;
     border: #0E1619 solid 1px;
+}
+
+.headermenuburger ul {
+    width: 340px;
 }
 
 
@@ -991,6 +1007,9 @@ aside {
    
     height: fit-content;
 }
+
+
+
 
 
 section.productlist {
