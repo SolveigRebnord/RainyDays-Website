@@ -76,17 +76,19 @@ header {
 
 /*Flex oppsett*/
 
+
 .burgermenu {
     flex: 33.3%;
 }
 
+
 .logoheaderdiv {
-    flex: 33.3%;
+    flex: 20%;
 }
 
 .icons {
-    flex: 33.3%;
-    padding-left: 9vw;
+    flex: 40%;
+    padding-left: 15vw;
 }
 
 
@@ -98,6 +100,36 @@ img.logoheader {
     margin-left: auto;
     margin-right: auto;
 }
+
+.headermenu {
+    flex: 40%;
+    padding-bottom: 0.5rem;
+  
+}
+
+.headermenu ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.headermenu li {
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.headermenu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    font-family: var(--buttonfont);
+}
+
+
+
 
 
 /* Hamburgermeny */
@@ -115,6 +147,7 @@ input#hamburgermenu:checked ~ nav.hamburgermenu {
 
 div.burgermenu {
     padding-left: 3vw;
+    width: 250px;
 }
 
 .hamburgermenu ul {
@@ -126,10 +159,14 @@ div.burgermenu {
 }
 
 
+
+
+
 .hamburgermenu ul li {
     border: solid white 0.1rem;
-    padding: 0.5rem;
     margin-bottom: 1rem;
+    text-align: center;
+    padding-top: 1rem;
 }
 
 .hamburgermenu ul li:last-child {
@@ -140,17 +177,18 @@ div.burgermenu {
 .hamburgermenu li a {
     text-decoration: none;
     color:white;
-    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     font-weight: 600;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+    text-transform: uppercase;
+   font-family: var(--buttonfont);
+    font-size: 1rem;
 }
 
 
 /* Ikoner + search */
 .fas {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .shoppingbag {
@@ -158,10 +196,42 @@ div.burgermenu {
 } 
 
 .search {
-    margin-right: 2vw;
+  width: 14rem;
 }
 
-/* Usikker på om lage menyliste eller ikke. Den må i så fall inn i den flexrammen du har alt, og det fucker opp med alt*/
+
+
+
+@media screen and (max-width:1250px) {
+    .headermenu {
+        display: none;
+    }
+    
+    .logoheaderdiv {
+        flex: 33.3;
+    }
+
+
+    .icons {
+        flex: 33.3%;
+        padding-left: 15vw;
+    }
+    
+
+}
+
+
+
+@media screen and (min-width:1250px) {
+    .burgermenu {
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* Responsiveness*/
 
@@ -181,19 +251,19 @@ div.burgermenu {
 /*Ta vekk padding når det er under 600px */
 
 
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1250px) {
     #searchicon {
         display: none;
     }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1250px) {
     .search {
         display: none;
     }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1250px) {
     .icons {
         padding-left: 16vw;
     }
