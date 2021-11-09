@@ -28,24 +28,124 @@ font-family: 'Open Sans Condensed', sans-serif;-->
     <title>Our Products | RainyDays </title>
 </head>
 
-
 <!--Header-->
 <header>
 
 
+    <nav class="headermenu">
+        <ul>
+        <li><a href="ourproducts.html">Our Products</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Customer Service</a></li>
+        </ul>
+    </nav>
+    
+    
+    
     <div class="burgermenu">
         <label for="hamburgermenu">
             <i class="fas fa-bars"></i>
         </label>
         <input type="checkbox" name="hamburgermenu" id="hamburgermenu">
         <nav class="hamburgermenu">
-        <ul class="headermenu">
+        <ul class="headermenuburger">
             <li><a href="ourproducts.html">Our Products</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Customer Service</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="customerservice.html">Customer Service</a></li>
         </ul>
-        </nav>
+     
+
+
+        <!--Aside in hamburger-->
+
+        <div class="filtermenuinburger">
+    <form id="filtermenuform" action="#" method="get">
+      
+<div class="sex">
+        <input type="checkbox" name="unisex" id="unisex" value="unisex">
+        <label for="unisex">Unisex</label>
+        <input type="checkbox" name="woman" id="woman" value="woman">
+        <label for="woman">Woman</label>
+        <input type="checkbox" name="man" id="man" value="man">
+        <label for="man">Man</label>
+</div>
+
+<div class="sortedby">
+    <div class="sortedbydiv"> Sorted By <input type="reset"> </div>
+    <div class="sortedbyfilters">
+        <ul>
+        <li><input type="checkbox" name="mostpopular" id="mostpopular" value="mostpopular">
+        <label for="mostpopular">Most Popular</label></li>
+        <li><input type="checkbox" name="a-z" id="a-z" value="a-z">
+        <label for="a-z">A - Z</label></li>
+        <li><input type="checkbox" name="price:lowtohigh" id="price:lowtohigh" value="price:lowtohigh">
+        <label for="price:lowtohigh">Price: Low to High</label></li>
+        <li><input type="checkbox" name="price:hightolow" id="price:hightolow" value="price:hightolow">
+        <label for="price:hightolow">Price: High to Low</label></li>
+        </ul>
     </div>
+</div>
+
+<div class="category">
+    <div class="categorydiv">Category <input type="reset"> </div>
+    <div class="categoryfilters">
+        <ul>
+        <li><input type="checkbox" name="jacket" id="jacket" value="jacket">
+        <label for="jacket">Jacket</label></li>
+        <li><input type="checkbox" name="coat" id="coat" value="coat">
+        <label for="coat">Coat</label></li>
+        <li><input type="checkbox" name="accesories" id="accesories" value="accesories">
+        <label for="accesories">Accessories</label></li>
+        </ul>
+    </div>
+</div>
+
+<div class="size">
+    <div class="sizediv">Size <input type="reset"> </div>
+    <div class="sizefilters">
+        <ul>
+        <il><input type="checkbox" name="XS" id="XS" value="XS">
+        <label for="XS">XS</label></il>
+        <il><input type="checkbox" name="S" id="S" value="S">
+        <label for="S">S</label></il>
+        <il><input type="checkbox" name="M" id="M" value="M">
+        <label for="M">M</label></il>
+        <il><input type="checkbox" name="L" id="L" value="L">
+        <label for="L">L</label></il>
+        <il><input type="checkbox" name="XL" id="XL" value="XL">
+        <label for="XL">XL</label></il>
+        </ul>
+    </div>
+</div>
+
+<div class="colour">
+    <div class="colourdiv">Colour <input type="reset"> </div>
+    <div class="colourfilters">
+        <ul>
+        <li><input type="checkbox" name="black" id="black" value="black">
+        <label for="black">Black </label><i id="fargeiconblack" class="fas fa-circle black"></i></li>
+        <li><input type="checkbox" name="grey" id="grey" value="grey">
+        <label for="grey">Grey </label><i id="fargeicongrey" class="fas fa-circle grey"></i></li>
+        <li><input type="checkbox" name="beige" id="beige" value="beige">
+        <label for="beige">Beige </label><i id="fargeiconbeige" class="fas fa-circle beige"></i></li>
+        <li><input type="checkbox" name="blue" id="blue" value="blue">
+        <label for="blue">Blue </label><i id="fargeiconblue" class="fas fa-circle blue"></i></li>
+    </div>
+</div>
+
+<div class="prize">
+    <div class="prizediv">Prize <input type="reset"> </div>
+    <div class="prizerange">
+    <input type="range" name="prize" id="prize" value="prizeminmax">
+    <label for="prize"> Min - Max</label>
+    </div>
+</div>
+</form>
+</nav>
+
+</div>
+    
+    
     
     <div class="logoheaderdiv">
     <a href="index.html"><img class="logoheader" src="images.img/Mask Group.png" alt="RainyDays_Logo"></a>
@@ -53,13 +153,14 @@ font-family: 'Open Sans Condensed', sans-serif;-->
     
     
     <div class="icons">
-        <a href="index.html" class="shoppingbag"><i class="fas fa-shopping-bag"></i></a>
+        <a href="shoppingcart.html" class="shoppingbag"><i class="fas fa-shopping-bag"></i></a>
         <input class="search" type="search" placeholder="search...">
         <i id="searchicon" class="fas fa-search"></i>
     
     </div>
     
     </header>
+    
     
 <body>
 
@@ -165,8 +266,7 @@ font-family: 'Open Sans Condensed', sans-serif;-->
 
 
 <!--Produkt liste-->
-
-<section class="productlist">
+<section class="productlist" >
 
 <div class="productcol"> <img src="images.img/marcus-santos-TeR7ekawHeU-unsplash.jpg" alt="Girl in yellow raincoat">
     <div class="infoimage">

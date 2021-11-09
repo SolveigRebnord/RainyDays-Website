@@ -153,7 +153,7 @@ div.burgermenu {
 .hamburgermenu ul {
     list-style: none;
     display: inline-block;
-    width: 14rem;
+    width: 280px;
     background-color: #7C6F61;
     padding: 2rem;
 }
@@ -963,7 +963,7 @@ div.tothetop {
     justify-content: space-between;
 }
 
-aside.filtermenu {
+aside.filtermenu, div.filtermenuinburger {
     display: inline-block;
     background-color: white;
     border: solid black 2px;
@@ -971,6 +971,17 @@ aside.filtermenu {
     width: fit-content;
     margin-right: 1rem;
 }
+
+div.filtermenuinburger ul {
+    background-color: lightgray;
+    border: #0E1619 solid 1px;
+}
+
+div.filtermenuinburger li {
+    text-align: left;
+    border: #0E1619 solid 1px;
+}
+
 
 aside.filtermenu ul {
     padding: 0;
@@ -1206,11 +1217,13 @@ p.prize {
 
 /* RESPONSIVENESS - Legge det inn der det tilhører?*/
 
-@media screen and (max-width: 1292px) {
+@media screen and (max-width: 1250px) {
     aside.filtermenu {
        display: none;
     }
 }
+
+
 
 
 
@@ -1271,11 +1284,14 @@ p.prize {
     }
 }
 
-@media screen and (max-width: 1090px) {
-    div.copyright {
-        margin-top: 1rem;
-    }
+
+
+@media screen and (max-width:1929) {
+    
 }
+
+
+
 
 
 
