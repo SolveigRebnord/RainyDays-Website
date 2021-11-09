@@ -281,6 +281,8 @@ div.showmelink {
     text-decoration: none;
     font-size: 1rem;
     font-family: var(--buttonfont);
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 
@@ -448,7 +450,7 @@ a.linkcategory {
     text-align: right;
     color: black;
     font-size: 1rem;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.1rem;
 }
 
 
@@ -529,9 +531,10 @@ a.shopbestsellersbutton {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     letter-spacing: 0.1rem;
-    padding: 0.4rem;
+    font-weight: 600;
+    padding: 0.8rem;
     background-color: transparent;
     border: solid 2px white;
     display: inline-block;
@@ -711,9 +714,8 @@ footer {
 }
 
 div.menulists {
-    width: 48%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    margin-left: 30vw;
     margin-top: 5rem;
 }
 
@@ -787,7 +789,7 @@ margin: 0;
 .aboutuslist a, .customerservicelist a, .productslist a {
     color: white;
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -796,7 +798,7 @@ mark {
     background-color: transparent;
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     padding-right: 1rem;
 }
@@ -828,20 +830,8 @@ div.tothetop {
 
 
 
-/* Copyright */
-.copyright {
-    color: white;
-    letter-spacing: 0.1rem;
-    word-spacing: 2rem;
-    text-align: center;
-    font-size: 0.8rem;
-}
 
-div.copyright {
-    width: 100%;
-    height: fit-content;
-    margin-top: 4rem;
-}
+
 
 
 /* Responsiveness*/
@@ -883,15 +873,11 @@ div.copyright {
 
 
 
-
-
-
 @media screen and (max-width: 450px) {
     body, main {
     margin: 0;
     }
 }
-
 
 
 
