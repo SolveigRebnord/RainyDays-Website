@@ -279,35 +279,38 @@ div.burgermenu {
 }
 
 
+
+
+
+
 /* New collection */
 
 .cityimage img {
-    width: 100%;
+    width: 650px;
     height: auto;
     display: block;
 }
 
 .umbrellaimage img {
-    width: 94%;
+    width: 330px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
+
 .newcollectiontop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 4rem;
 }
 
-.umbrellaimage {
-    flex: 40%;
-}
 
-.cityimage {
-    flex: 60%;
+div.collectiontext {
+    width: 50%;
 }
 
 div.newcollectiontop {
@@ -326,23 +329,24 @@ div.newcollectionbottom {
 .newcollectionbottom {
     margin-top: 2rem;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
-    justify-content: space-around;
-    gap: 5rem;
+    justify-content: space-between;
     margin-bottom: 7vw;
 }
 
-.collectiontext {
-    flex: 30%;
-}
-
-.showmelink {
-    flex: 20%;
-}
 
 div.showmelink {
     text-align: end;
+    width: 161.19px;
+    height: 58px;
+}
+
+.showmelink div {
+    width: fit-content;
+    height: fit-content;
 }
 
 .showmelink a {
@@ -358,59 +362,64 @@ div.showmelink {
 }
 
 
+@media screen and (max-width: 1310px) {
+    
+.cityimage img {
+    width: 540px;
+   
+}
 
+.umbrellaimage img {
+    width: 275px;
+}
+}
 
-/* TOPDEL AV NEW COLLECTION*/
-@media screen and (max-width: 1250px) {
-    .cityimage {
-        flex: 100%;
-        width: 80%
+@media screen and (max-width: 1100px) {
+    
+    .cityimage img {
+        width: 450px;
+       
     }
-}
-@media screen and (max-width: 1250px) {
-    div.newcollectiontop {
-        width: 100%
+    
+    .umbrellaimage img {
+        width: 230px;
     }
-}
-
-@media screen and (max-width: 1250px) {
-    .umbrellaimage {
-        display: none;
     }
-}
 
-/*BUNNDEL AV NEW COLLECTION*/
+    @media screen and (max-width: 940px) {
+    
+        .cityimage img {
+            width: 395px;
+           
+        }
+        
+        .umbrellaimage img {
+            width: 200px;
+        }
+        }
 
-@media screen and (max-width: 1250px) {
-.showmelink {
-    flex: 50%;
-}
-}
-@media screen and (max-width: 1250px) {
-    .collectiontext {
-        flex: 50%;
-    }
-}
+        @media screen and (max-width: 820px) {
+    
+            .cityimage img {
+                width: 100%
+               
+            }
+            
+            .umbrellaimage img {
+                display: none;
+            }
+            
 
+            .newcollectionbottom {
+                flex-direction: column;
 
-@media screen and (max-width: 1250px) {
-    .newcollectionbottom {
-        gap: 0;
-    }
-}
+            }
+            
 
-@media screen and (max-width: 650px) {
-    .newcollectionbottom {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    div.collectiontext, div.showmelink {
-        margin-bottom: 2rem;
-    }
-}
-
+            div.collectiontext {
+                width: 100%;
+            }
+        }
 
 
 
@@ -435,6 +444,7 @@ div.showmelink {
 section.shopwoman {
     position: relative;
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 div.buttonshopwoman {
@@ -470,6 +480,7 @@ div.buttonshopwoman :hover {
 section.shopman {
     position: relative;
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 div.buttonshopman {
@@ -527,7 +538,7 @@ a.linkcategory {
 
 
 div.shopbycategorytext {
-    padding-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -658,8 +669,7 @@ div.bestsellerknapp {
     align-items: center;
     justify-content: space-around;
     padding-top: 2rem;
-    margin-bottom: 5vw;
-    margin-top: 1vw;
+    margin: 4rem 0 6rem 0;
 }
 
 div.newsletterform {
