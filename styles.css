@@ -71,6 +71,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+   
     margin-bottom: 5vw;
 }
 
@@ -81,14 +82,21 @@ header {
     flex: 33.3%;
 }
 
+.headermenu {
+    flex: 33.3%;
+    padding-bottom: 0.5rem;
+}
 
 .logoheaderdiv {
-    flex: 20%;
+   flex: 33.3%;
 }
 
 .icons {
-    flex: 40%;
-    padding-left: 15vw;
+    flex: 33.3%;
+}
+
+div.icons {
+  padding-left: 7vw;
 }
 
 
@@ -101,11 +109,7 @@ img.logoheader {
     margin-right: auto;
 }
 
-.headermenu {
-    flex: 40%;
-    padding-bottom: 0.5rem;
-  
-}
+
 
 .headermenu ul {
     list-style: none;
@@ -120,10 +124,10 @@ img.logoheader {
 
 .headermenu a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
     font-family: var(--buttonfont);
 }
@@ -190,41 +194,40 @@ div.burgermenu {
 /* Ikoner + search */
 .fas {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .shoppingbag {
-    margin-right: 3vw;
+    margin-right: 1rem;
 } 
 
 .search {
-  width: 14rem;
+  width: 13rem;
+  background-color: transparent;
+  border:none;
+  border-bottom: white solid 2px;
+}
+
+::placeholder {
+    color: white;
+    text-align: end;
+}
+
+.account {
+    margin-right: 2rem;
 }
 
 
 
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1262px) {
     .headermenu {
         display: none;
     }
-    
-    .logoheaderdiv {
-        flex: 33.3;
-    }
-
-
-    .icons {
-        flex: 33.3%;
-        padding-left: 15vw;
-    }
-    
 
 }
 
-
-
-@media screen and (min-width:1250px) {
+@media screen and (min-width:1262px) {
     .burgermenu {
         display: none;
     }
@@ -237,47 +240,60 @@ div.burgermenu {
 
 /* Responsiveness*/
 
-/* Får ikonene til å skyves innover igjen*/
-@media screen and (max-width: 700px) {
-    .icons {
-        padding-left: 15vw;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .icons {
-        padding-left: 8vw;
-    }
-}
 
 /*Ta vekk padding når det er under 600px */
 
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1262px) {
     #searchicon {
         display: none;
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1262px) {
     .search {
         display: none;
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .icons {
-        padding-left: 16vw;
+@media screen and (max-width: 1262px) {
+    div.icons {
+        padding-left: 14rem;
+    }
+
+    .account {
+        margin-right: 1rem;
     }
 }
 
 
-@media screen and (max-width: 400px) {
-    .icons {
-        padding-left: 10vw;
+
+@media screen and (max-width: 1060px) {
+    div.icons {
+        padding-left: 10rem;
     }
 }
 
+
+@media screen and (max-width: 860px) {
+    div.icons {
+        padding-left: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    div.icons {
+        padding-left: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    div.icons {
+        padding-left: 0.5rem;
+    }
+}
 
 
 
