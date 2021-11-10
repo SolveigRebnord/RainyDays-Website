@@ -92,6 +92,7 @@ header {
     align-items: center;
    
     margin-bottom: 5vw;
+    z-index: 1;
 }
 
 /*Flex oppsett*/
@@ -116,7 +117,7 @@ header {
 }
 
 div.icons {
-  padding-left: 7vw;
+  text-align: end;
 }
 
 img.logoheader {
@@ -229,6 +230,9 @@ div.burgermenu {
     #searchicon {
         display: none;
     }
+    .search {
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (max-width: 1262px) {
@@ -238,9 +242,6 @@ div.burgermenu {
 }
 
 @media screen and (max-width: 1262px) {
-    div.icons {
-        padding-left: 14rem;
-    }
 
     .account {
         margin-right: 1rem;
@@ -248,13 +249,13 @@ div.burgermenu {
 }
 
 
-
-
 @media screen and (max-width:1262px) {
     .headermenu {
         display: none;
     }
-
+    #searchicon {
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (min-width:1262px) {
@@ -265,37 +266,7 @@ div.burgermenu {
     
 }
 
-
-
-
-/*Dette er dårlig forsøk på å holde denne linjen ben, får ikke til at det er venstrejustert inni diven..*/
-
-
-@media screen and (max-width: 1060px) {
-    div.icons {
-        padding-left: 10rem;
-    }
-}
-
-
-@media screen and (max-width: 860px) {
-    div.icons {
-        padding-left: 7rem;
-    }
-}
-
-
-@media screen and (max-width: 720px) {
-    div.icons {
-        padding-left: 4rem;
-    }
-}
-
-
 @media screen and (max-width: 590px) {
-    div.icons {
-        padding-left: 0.5rem;
-    }
 
     header {
         position: -webkit-sticky;
@@ -454,6 +425,7 @@ div.showmelink {
 .imageshopwoman img, .imageshopman img {
     width: 100%;
     height: auto;
+    z-index: 2;
 }
 
 .buttonshopwoman a, .buttonshopman a {
@@ -461,7 +433,7 @@ div.showmelink {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1vw;
-    font-size: 1.5vw;
+    font-size: 1.1rem;
     padding: 1.5vw;
     border: solid white;
 }
@@ -519,7 +491,7 @@ div.shopbycategoryimages {
 h2.adventure {
     padding-top: 3vh;
     text-align: right;
-    font-size: 3vw;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.2vw;
 }
@@ -529,7 +501,7 @@ a.linkcategory {
     text-align: right;
     color: black;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 }
 
 div.shopbycategorytext {
@@ -556,6 +528,13 @@ div.shopbycategorytext {
     }   
 }
 
+
+@media screen and (max-width: 600px) {
+
+    a.linkcategory {
+        font-size: 0.6rem;
+    }
+}
 
 
 
@@ -798,6 +777,10 @@ div.menulists {
 
 .menulists > div {
     height: 3rem;
+}
+
+.copyright {
+    text-align: center;
 }
 
 /* STYLE FOOTERMENU MOBIL */
