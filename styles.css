@@ -70,10 +70,11 @@ font-family: 'Open Sans Condensed', sans-serif;*/
     --buttonfont: 'Open Sans Condensed';
 
 
-    --coldrose: #C0ADA0;
-    --coldblue: #75878D;
-    --nearlywhite: #E8E9EE;
+    --coldrose: #DBCEBD;
+    --coldblue: #A7AEB4;
+    --nearlywhite: #f1f1f1;
     --nearlyblack: #1C2324;
+    --checkout: #264547;
 }
 
 
@@ -257,7 +258,7 @@ div.burgermenu {
     width: 340px;
     margin-bottom: 0;
     background-color: var(--coldrose);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .hamburgermenu ul li {
@@ -878,8 +879,8 @@ div.menulists {
 .menumobil a {
     display: block;
     text-decoration: none;
-    color: white;
-letter-spacing: 0.1rem;
+    color: black;
+    letter-spacing: 0.1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--coldblue);
     font-size: 0.8rem;
@@ -893,7 +894,7 @@ div.menumobil {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-bottom: 1rem;
 }
 
@@ -980,38 +981,25 @@ div.tothetop {
     .menulists {
         display: none;
     }
-}
-
-@media screen and (min-width: 1090px) {
-    .menumobil {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 1090px) {
     div.socialmedia {
         display: none;
     }
-}
-@media screen and (max-width: 1090px) {
     .tothetop {
         display: none;
     }
 }
 
 @media screen and (min-width: 1090px) {
+    .menumobil {
+        display: none;
+    }
     .tothetopmobil {
         display: none;
     }
-}
-
-@media screen and (min-width: 1090px) {
     div.socialmediamobil {
         display: none;
     }
 }
-
 
 
 @media screen and (max-width: 450px) {
@@ -1054,8 +1042,8 @@ div.filtermenuinburger {
 }
 
 div.filtermenuinburger ul {
-    background-color: rgb(189, 186, 186);
-    border: #0E1619 solid 1px;
+    background-color: var(--nearlywhite);
+    border: var(--nearlyblack) solid 1px;
     width: 300px;
 }
 
@@ -1150,7 +1138,7 @@ div.sex {
 }
 
 .filtermenu input {
-background-color: #9E9090;
+background-color: var(--coldblue);
 color: white;
 letter-spacing: 0.05rem;
 }
@@ -1192,8 +1180,8 @@ p.prize {
     text-transform: uppercase;
     font-size: 1rem;
     padding: 0.7rem 3rem 0.7rem 3rem;
-    background-color: #7C6F61;
-    color: white;
+    background-color: var(--coldrose);
+    color: var(--nearlyblack);
     letter-spacing: 0.1rem;
     font-weight: 600;
 }
@@ -1241,12 +1229,12 @@ p.prize {
 }
 
 #previouspage :hover {
-    background-color: #7C6F61;
+    background-color: var(--coldblue);
     color: white;
 }
 
 #nextpage :hover {
-    background-color: #7C6F61;
+    background-color: var(--coldblue);
     color: white;
 }
 
@@ -1424,22 +1412,26 @@ select#size  {
 
 #addtocartbutton {
     display: block;
-    width: 10rem;
-    height: 2.5rem;
+    width: 12rem;
+    height: 3rem;
     text-decoration: none;
-    background-color: #7C6F61;
+    background-color: var(--checkout);
     color: white;
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 600;
     overflow: hidden;
-    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    padding: 1rem 1.6rem 1rem 1.8rem;
     font-family: sans-serif;
     letter-spacing: 0.1rem;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 2rem;
+    text-align: center;
+    margin-top: 3rem;
 }
+
+
+
 
 .smalltext {
     padding-top: 3rem;
@@ -1521,8 +1513,8 @@ p.prize {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.7rem 2rem 0.7rem 2rem;
-    background-color: #7C6F61;
-    color: white;
+    background-color: var(--coldrose);
+    color: black;
     letter-spacing: 0.1rem;
     font-weight: 600;
 }
@@ -1577,7 +1569,7 @@ p.prize {
 }
 
 .cartcheckout {
-    background-color: #D6C8BB;
+    background-color: var(--coldrose);
     width: 90%;
     height: fit-content;
     margin-left: auto;
@@ -1694,7 +1686,7 @@ section.buyerdetails {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--nearlywhite);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -1724,8 +1716,8 @@ a#loadshoppingalternatives {
     text-decoration: none;
     font-size: 0.8rem;
     padding: 1rem 1rem 1rem 1rem;
-    background-color: #7C6F61;
-    color: white;
+    background-color: var(--coldrose);
+    color: black;
     letter-spacing: 0.1rem;
     font-weight: 600;
     display: block;
@@ -1741,7 +1733,7 @@ a#loadshoppingalternatives {
     text-decoration: none;
     font-size: 0.8rem;
     padding: 1rem 1rem 1em 1rem;
-    background-color: #1B2423;
+    background-color: var(--nearlyblack);
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -1759,7 +1751,7 @@ div.continueasguest {
 
 
 #signupform {
-    background-color: #D6C8BB;
+    background-color: var(--coldrose);
     padding: 1rem;
     width: 20rem;
     display: block;
@@ -1774,7 +1766,7 @@ form#signupform ul {
 
 #signupform {
   
-    border: 1px #0E1619 solid;
+    border: 1px var(--nearlyblack) solid;
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
@@ -1791,7 +1783,7 @@ input#name, input#email, input#phonenumber {
 }
 
 input#name:hover, input#email:hover, input#phonenumber:hover {
-    background-color: #f8f8ff;
+    background-color: var(--nearlywhite);
     outline-style: solid;
     outline-color: grey;
     outline-width: 0.1rem;
@@ -1804,14 +1796,14 @@ li {
 
 div.termsandconditions {
     margin-top: 4rem;
-    font-size: 1rem;
     margin-bottom: 4rem;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--nearlywhite);
     padding: 3rem;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 input#agree {
     outline: red groove 2px; 
@@ -1820,7 +1812,7 @@ input#agree {
 
 #checkoutform {
     font-family: var(--breadfont);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 div.termsandconditions a {
@@ -1832,7 +1824,7 @@ div.termsandconditions a {
     width: 18rem;
     height: 4rem;
     text-decoration: none;
-    background-color: #101c20;
+    background-color: var(--checkout);
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -1896,7 +1888,7 @@ div.termsandconditions a {
 }
 
 .orderinfo {
-    background-color: #dbcebd;
+    background-color: var(--coldrose);
     padding: 4rem;
 }
 
@@ -2177,7 +2169,7 @@ div.divwithimage {
     position: absolute;
     top: 10%;
     left: 5%;
-    background-color: #C0ADA0;
+    background-color: var(--coldrose);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2208,7 +2200,7 @@ p.getintouchp {
 div.divwithform {
     width: 100%;
     height: 26rem;
-    background-color: rgb(167, 174, 180);
+    background-color: var(--coldblue);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -2243,6 +2235,11 @@ input#contactname, input#contactemail, input#contactnumber {
     font-family: var(--breadfont);
     font-size: 1rem;
     border: none;
+}
+
+#contactsubmit:hover {
+    background-color: white;
+    color: black;
 }
 
 
