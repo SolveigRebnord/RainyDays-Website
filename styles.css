@@ -104,6 +104,7 @@ header {
 .headermenu {
     flex: 33.3%;
     padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .logoheaderdiv {
@@ -259,7 +260,9 @@ div.burgermenu {
 @media screen and (min-width:1262px) {
     .burgermenu {
         display: none;
+      
     }
+    
 }
 
 
@@ -292,6 +295,13 @@ div.burgermenu {
 @media screen and (max-width: 590px) {
     div.icons {
         padding-left: 0.5rem;
+    }
+
+    header {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+
     }
 }
 
@@ -1996,13 +2006,8 @@ div.whoarewep li {
     margin-left: auto;
     margin-right: auto;
 }
-}
-
-.ourproductsaboutus {
 
 
-
-}
 
 
 @media screen and (max-width: 750px){
