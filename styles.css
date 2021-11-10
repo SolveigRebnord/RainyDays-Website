@@ -668,7 +668,7 @@ div.imagenewsletter {
 
 
 #newsletterformform {
-    background-color: #7C6F61;
+    background-color: #C0ADA0;
     padding: 2rem;
     width: 35rem;
     display: block;
@@ -682,14 +682,14 @@ form ul {
 
 #newsletterfieldset {
     border-width: 0.1rem;
-    border-style: solid;
-    color: white;
+    border-style: solid 1px #0E1619;
+    color: #0E1619;
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
 
 label {
-    font-family: monospace;
+    color: white;
 }
 
 input#name, input#email {
@@ -717,7 +717,7 @@ li {
     font-size: 0.8rem;
     padding: 0.4rem 2.2rem 0.4rem 2.2rem;
     border: solid white;
-    background-color: grey;
+    background-color: #0E1619;
 }
 
 .submitnewsletter button:hover {
@@ -777,10 +777,6 @@ div.menulists {
 
 .menulists > div {
     height: 3rem;
-}
-
-.copyright {
-    text-align: center;
 }
 
 /* STYLE FOOTERMENU MOBIL */
