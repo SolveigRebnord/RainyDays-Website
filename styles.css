@@ -40,6 +40,17 @@ p {
     font-size: 1.2rem;
 }
 
+
+mark {
+    font-family: var(--uppercaseheader);
+    font-size: 2rem;
+}
+
+form {
+    font-family: var(--breadfont);
+}
+
+
 /* VARIABLES */
 
 
@@ -50,30 +61,22 @@ font-family: 'Lobster', cursive;
 font-family: 'Open Sans Condensed', sans-serif;*/
 
 
-:root {
-    --buttonfont: 'Open Sans Condensed';
-}
 
 :root {
-    --breadfont: 'Open Sans Condensed';
-}
 
-:root {
-    --fancyheader: 'Lobster';
-}
-
-:root {
     --uppercaseheader: 'Bebas Neue';
+    --fancyheader: 'Lobster';
+    --breadfont: 'Open Sans Condensed';
+    --buttonfont: 'Open Sans Condensed';
+
+
+    --coldrose: #C0ADA0;
+    --coldblue: #75878D;
+    --nearlywhite: #E8E9EE;
+    --nearlyblack: #1C2324;
 }
 
-mark {
-    font-family: var(--uppercaseheader);
-    font-size: 2rem;
-}
 
-form {
-    font-family: var(--breadfont);
-}
 
 
 
@@ -253,12 +256,12 @@ div.burgermenu {
     display: inline-block;
     width: 340px;
     margin-bottom: 0;
-    background-color: #7C6F61;
+    background-color: var(--coldrose);
     padding: 2rem;
 }
 
 .hamburgermenu ul li {
-    border: solid white 0.1rem;
+    border-bottom: solid white 0.1rem;
     margin-bottom: 1rem;
     text-align: center;
     padding-top: 1rem;
@@ -266,16 +269,18 @@ div.burgermenu {
 
 .hamburgermenu ul li:last-child {
     margin-bottom: 0;
+    border-bottom: none;
 }
 
 .hamburgermenu li a {
     text-decoration: none;
-    color:white;
+    color:var(--nearlyblack);
     letter-spacing: 0.1rem;
     font-weight: 600;
     text-transform: uppercase;
    font-family: var(--buttonfont);
     font-size: 1rem;
+    padding: 2rem;
 }
 
 
@@ -296,7 +301,7 @@ div.burgermenu {
   border-bottom: white solid 2px;
 }
 .account {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 
@@ -317,13 +322,6 @@ div.burgermenu {
 @media screen and (max-width: 1262px) {
     .search {
         display: none;
-    }
-}
-
-@media screen and (max-width: 1262px) {
-
-    .account {
-        margin-right: 1rem;
     }
 }
 
@@ -436,7 +434,7 @@ div.showmelink {
 }
 
 .showmelink :hover {
-    background-color: #1B2423;
+    background-color: var(--nearlyblack);
     color: white;
 }
 
@@ -541,12 +539,12 @@ div.buttonshopman {
 }
 
 div.buttonshopwoman :hover {
-    background-color: #141414;
+    background-color: var(--nearlyblack);
     color: white;
 }
 
 div.buttonshopman :hover {
-    background-color: #141414;
+    background-color: var(--nearlyblack);
     color: white;
 }
 
@@ -686,6 +684,11 @@ a.shopbestsellersbutton {
     margin-bottom: 1rem;
 }
 
+a.shopbestsellersbutton:hover {
+    background-color: white;
+    color: var(--nearlyblack);
+}
+
 div.bestsellerknapp {
     text-align: center;
 }
@@ -753,7 +756,7 @@ div.imagenewsletter {
 
 
 #newsletterformform {
-    background-color: #C0ADA0;
+    background-color: var(--coldrose);
     padding: 2rem;
     width: 35rem;
     display: block;
@@ -767,7 +770,7 @@ form ul {
 
 #newsletterfieldset {
    
-    border: 2px solid #0E1619 ;
+    border: 2px solid var(--nearlyblack) ;
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
@@ -785,7 +788,7 @@ input#name, input#email {
 }
 
 input#name:hover, input#email:hover {
-    background-color: #f8f8ff;
+    background-color: var(--nearlywhite);
     outline-style: solid;
     outline-color: grey;
     outline-width: 0.1rem;
@@ -875,12 +878,13 @@ div.menulists {
 .menumobil a {
     display: block;
     text-decoration: none;
-    color: #0E1619;
+    color: white;
+letter-spacing: 0.1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #C0ADA0;
+    background-color: var(--coldblue);
     font-size: 0.8rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 div.menumobil {
