@@ -788,10 +788,9 @@ div.menulists {
 .menumobil a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #0E1619;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    border: white solid 2px;
-    background-color: #857373;
+    background-color: #C0ADA0;
     font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: 600;
