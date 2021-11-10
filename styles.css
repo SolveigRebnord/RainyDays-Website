@@ -1969,6 +1969,71 @@ background-color: white;
     margin: 0rem 3rem 1rem 3rem;
 }
 
+.hrforaboutus {
+    width: 60%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+
+
+.h1aboutus {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 50vw;
+    left: 38%;
+    color: white;
+}
+
+.whoareweimage img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+div.whoarewep {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+div.whoarewep ul {
+    list-style: none;
+    padding: 2rem 0 2rem 0;
+}
+
+
+div.whoarewep li {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    display: inline;
+    margin-right: 2rem;
+}
+
+.ourproductsaboutus {
+
+    display: block;
+    width: 12rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    background-color: var(--coldrose);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    box-shadow: white;
+    letter-spacing: 0.15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .sectiontextaboutus {
     display: flex;
@@ -1988,156 +2053,51 @@ div.ourvision, div.ourstory {
 .h2ourvision, .h2ourstory {
     width: 50%;
     height: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     padding-top: 0.5rem;
-    background-color: var(--coldrose);
     color: var(--nearlyblack);
     padding-top: 0.6rem;
-    font-family: var(--breadfont);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 2rem;
 }
 
 
-
+@media screen and (max-width: 591px) {
+    .h1aboutus {
+        top: 40vw;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .sectiontextaboutus {
         flex-direction: column;
     }
-    .h2ourvision, .h2ourstory {
-        font-size: 1.5rem;
-        padding-top: 0.9rem;
+}
+
+@media screen and (max-width: 1215px) {
+    div.whoarewep li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.whoarewep {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+
+    .aboutusmain {
+        margin: 0;
+    }
+    h2.h2ourvision, h2.h2ourstory {
+        font-size: 2rem;
+    }
+    div.ourstory, div.ourvision {
+        padding: 1rem;
     }
 }
 
 
 
-
-
-
-.hrforaboutus {
-    width: 60%;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-}
-
-
-.whoarewesection img {
-    width: 400px;
-}
-
-.whoarewesection {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
-.whoareweimage {
-    flex: 50%;
-}
-
-.whoarewep {
-    flex: 50%;
-}
-
-div.whoarewep {
-    text-align: justify;
-}
-
-div.whoarewep ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-div.whoarewep li {
-    padding-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.ourproductsaboutus {
-
-    display: block;
-    width: 9rem;
-    text-decoration: none;
-    text-align: center;
-    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    background-color: #7C6F61;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    box-shadow: white;
-    letter-spacing: 0.15rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-@media screen and (max-width: 750px){
-    .infotextourvision, .infotextourstory, .whoarewesection {
-        flex-direction: column;
-        gap: 1rem;
-        line-height: 1.5rem;
-        justify-content: center;
-    }
-
-    .h2ourvision h2, .h2ourstory h2  {
-        font-size: 1.7rem;
-        padding-top: 1rem;
-    }
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:600px) {
-    .whoarewesection {
-        margin: 0rem 0.5rem 0rem 0.5rem;
-    }
-    main.aboutusmain {
-        margin: 0rem 0.5rem 0rem 0.5rem;
-    }
-    div.flexthatp a {
-        font-size: 0.9rem;
-    }
-}
-
-
-@media screen and (max-width:900px) {
-    .p1 {
-        margin-right: 2rem;
-    }
-}
-
-@media screen and (max-width:822px) {
-    .flexthatp {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: justify;
-    }
-    .p1 {
-        margin-right: 0;
-    }
-}
 
 /*------------------------------------------------------Customer Service-----------------------------------------------------------*/
 
