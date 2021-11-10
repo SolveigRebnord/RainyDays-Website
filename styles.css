@@ -1966,54 +1966,58 @@ img.successlogo {
 background-color: white;
 }
 .aboutusmain {
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 0rem 3rem 1rem 3rem;
 }
 
 
-.sectionourvision, .sectionourstory {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #D6C8BB;
+.sectiontextaboutus {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+div.ourvision, div.ourstory {
+    background-color: white;
     padding: 2rem;
-    margin-bottom: 3rem;
+    text-align: justify;
+    border: black double 8px;
 }
 
-.sectionourstory {
-    background-color: #A7AEB4;
-}
 
 .h2ourvision, .h2ourstory {
     width: 50%;
     height: 4rem;
-    background-color: #1B2423;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    background-color: var(--coldrose);
+    color: var(--nearlyblack);
+    padding-top: 0.6rem;
+    font-family: var(--breadfont);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
-.h2ourstory {
-    background-color: white;
+
+
+
+@media screen and (max-width: 1000px) {
+    .sectiontextaboutus {
+        flex-direction: column;
+    }
+    .h2ourvision, .h2ourstory {
+        font-size: 1.5rem;
+        padding-top: 0.9rem;
+    }
 }
 
-.h2ourvision h2 {
-    color: #D6C8BB;
-    padding-top: 0.4rem;
-}
 
-.h2ourstory h2 {
-    color: #1B2423;
-    padding-top: 0.4rem;
-}
 
-.infotextourvision, .infotextourstory {
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    gap: 2rem;
-    text-align: justify;
-}
+
+
 
 .hrforaboutus {
     width: 60%;
