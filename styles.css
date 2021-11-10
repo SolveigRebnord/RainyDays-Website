@@ -72,8 +72,63 @@ mark {
 }
 
 form {
-    font-family: var(--buttonfont);
+    font-family: var(--breadfont);
 }
+
+
+
+/*Breadcrumb*/
+@media screen and (max-width:590px) {
+    .breadcrumb {
+        display: none;
+}
+}
+
+ul.breadcrumb {
+    list-style: none;
+    padding-left: 4rem;
+}
+
+
+ul.breadcrumb li {
+    display: inline;
+    font-family: var(--breadfont);
+}
+
+.breadcrumb a {
+text-decoration: none;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+     color: black;
+    content: "/\00a0";
+}
+
+.slidinghoverbreadcrumb {
+    position: relative;
+}
+
+.slidinghoverbreadcrumb:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    transition: width .2s ease;
+    -webkit-transition: width .5s ease;
+    background: black;
+  }
+   
+  .slidinghoverbreadcrumb:hover:after{
+    width: 100%;
+    left: 0;
+    background: black;
+  }
+
+
+
 
 
 
@@ -149,6 +204,30 @@ img.logoheader {
     font-family: var(--buttonfont);
 }
 
+.slidinghover {
+    position: relative;
+}
+
+
+.slidinghover:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    transition: width .2s ease;
+    -webkit-transition: width .5s ease;
+    background: white;
+  }
+   
+  .slidinghover:hover:after{
+    width: 100%;
+    left: 0;
+    background: white;
+  }
+   /* Inspirasjon/credit: https://codepen.io/mehi/pen/MyWqPM */
+  
 
 
 /* Hamburgermeny */
@@ -356,6 +435,11 @@ div.showmelink {
     font-weight: 600;
 }
 
+.showmelink :hover {
+    background-color: #1B2423;
+    color: white;
+}
+
 
 /*Responsiveness*/
 @media screen and (max-width: 1310px) {
@@ -450,18 +534,21 @@ div.buttonshopwoman {
     right: 12%
 }
 
-div.buttonshopwoman :hover, div.buttonshopman :hover {
-    background-color: silver;
-    color: black;
- } 
-
 div.buttonshopman {
     position: absolute;
     top: 50%;
     left: 12%
 }
 
+div.buttonshopwoman :hover {
+    background-color: #141414;
+    color: white;
+}
 
+div.buttonshopman :hover {
+    background-color: #141414;
+    color: white;
+}
 
 
 /* Shop by category */
@@ -955,6 +1042,7 @@ aside.filtermenu, div.filtermenuinburger {
 div.filtermenuinburger {
     margin-right: 0;
     width: 340px;
+    font-family: var(--breadfont);
 }
 
 .filtermenuinburger div {
@@ -962,14 +1050,31 @@ div.filtermenuinburger {
 }
 
 div.filtermenuinburger ul {
-    background-color: lightgray;
+    background-color: rgb(189, 186, 186);
     border: #0E1619 solid 1px;
     width: 300px;
 }
 
 div.filtermenuinburger li {
     text-align: left;
-    border: #0E1619 solid 1px;
+    font-size: 1.2rem;
+    border: none;
+    color: black;
+    border: black solid 1px;
+    background-color: white;
+    padding-left: 0.4rem;
+}
+
+.sortedbydiv, .categorydiv, .sizediv, .colourdiv, .prizediv {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+div.sex {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .headermenuburger ul {
@@ -1087,7 +1192,11 @@ p.prize {
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
+}
 
+.outlinehover:hover {
+    outline:black;
+    outline-style: double;
 }
 
 
@@ -1127,8 +1236,13 @@ p.prize {
     letter-spacing: 0.05rem;
 }
 
-.pagebutton-desktop :hover {
-    background-color: black;
+#previouspage :hover {
+    background-color: #7C6F61;
+    color: white;
+}
+
+#nextpage :hover {
+    background-color: #7C6F61;
     color: white;
 }
 
@@ -1459,7 +1573,7 @@ p.prize {
 }
 
 .cartcheckout {
-    background-color: #9E9090;
+    background-color: #D6C8BB;
     width: 90%;
     height: fit-content;
     margin-left: auto;
@@ -1470,17 +1584,18 @@ p.prize {
 
 div.checkoutinfo {
     margin-left: 5rem;
+    font-weight: bold;
 }
 
 .checkoutinfo {
-    color: white;
+    color: black;
 }
 
     #x {
-        color: white;
+        color: black;
         text-decoration: none;
-        padding: 0.5rem;
-        border: solid 1px white;
+        padding: 0.3rem 0rem 0rem 0.75rem;
+        border: solid 1px black;
         margin-right: 2rem;
         display: block;
         width: 2rem;
@@ -1491,19 +1606,20 @@ div.checkoutinfo {
 
 .addremove a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-    border: solid white 1px;
-    font-weight: 600;
+    border: solid black 1px;
+ 
     font-size: 0.8rem;
 }
 
 .addremove p {
     display: inline-block;
-    color: white;
+    color: black;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 0.8rem;
+  
 }
 
 div.addremove {
@@ -1513,20 +1629,22 @@ div.addremove {
     margin-left: 5rem;
     margin-top: 2rem;
     display: inline;
+    font-weight: bolder;
 }
 
 p.prizecheckout {
     display: block;
-    color: white;
+    color: black;
     letter-spacing: 0.1rem;
     font-size: 1.2rem;
+    font-weight: bolder;
     margin-right: 1.5rem;
     float: right;
     margin-bottom: 2rem;
 }
 
 p.totalsmalltext {
-font-size: 0.6rem;
+font-size: 0.8rem;
 }
 
 .totalamount {
@@ -1537,7 +1655,7 @@ font-size: 0.6rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .totalamount div {
@@ -1560,8 +1678,8 @@ div.continueasguest {
 
 #total {
     letter-spacing: 0.1rem;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
 }
 
 
@@ -1572,7 +1690,7 @@ section.buyerdetails {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    background-color: lightgrey;
+    background-color: rgb(226, 226, 226);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -1619,7 +1737,7 @@ a#loadshoppingalternatives {
     text-decoration: none;
     font-size: 0.8rem;
     padding: 1rem 1rem 1em 1rem;
-    background-color: black;
+    background-color: #1B2423;
     color: white;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -1637,7 +1755,7 @@ div.continueasguest {
 
 
 #signupform {
-    background-color: #7C6F61;
+    background-color: #D6C8BB;
     padding: 1rem;
     width: 20rem;
     display: block;
@@ -1651,9 +1769,8 @@ form#signupform ul {
 }
 
 #signupform {
-    border-width: 0.1rem;
-    border-style: solid;
-    color: white;
+  
+    border: 1px #0E1619 solid;
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
@@ -1663,9 +1780,6 @@ fieldset#signupform {
     width: 15rem;
 }
 
-label {
-    font-family: sans-serif;
-}
 
 input#name, input#email, input#phonenumber {
     width: 15rem;
@@ -1684,28 +1798,11 @@ li {
 }
 
 
-.submitnewsletter button {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 0.8rem;
-    padding: 0.4rem 2.2rem 0.4rem 2.2rem;
-    border: solid white;
-    background-color: grey;
-}
-
-.submitnewsletter button:hover {
-    cursor: pointer;
-    outline-width: 0.2rem;
-    outline-style: groove;
-}
-
 div.termsandconditions {
     margin-top: 4rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 4rem;
-    background-color: lightgrey;
+    background-color: rgb(226, 226, 226);
     padding: 3rem;
     width: 90%;
     margin-left: auto;
@@ -1728,15 +1825,15 @@ div.termsandconditions a {
 
 #checkout {
     display: block;
-    width: 15rem;
-    height: 3rem;
+    width: 18rem;
+    height: 4rem;
     text-decoration: none;
-    background-color: #0E1619;
+    background-color: #101c20;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 1rem 1.5rem 0.8rem 1.5rem;
+    padding: 1.2rem 1.5rem 0.8rem 1.5rem;
     font-family: sans-serif;
     letter-spacing: 0.1rem;
     margin-right: auto;
