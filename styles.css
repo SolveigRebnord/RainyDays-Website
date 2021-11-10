@@ -1384,7 +1384,11 @@ div.productimages {
     height: auto;
     display: inline-block;
 }
-/* Legg inn hover over bildene!*/
+
+.smallimages img:hover {
+    border: black double 5px;
+}
+
 
 
 
