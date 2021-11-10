@@ -250,6 +250,11 @@ input#hamburgermenu:checked ~ nav.hamburgermenu {
 div.burgermenu {
     padding-left: 3vw;
     width: 250px;
+    z-index: 1;
+}
+
+.shoppingcartmain {
+    z-index: 2;
 }
 
 .hamburgermenu ul {
@@ -1971,8 +1976,8 @@ background-color: white;
 
 .hrforaboutus {
     width: 60%;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 
