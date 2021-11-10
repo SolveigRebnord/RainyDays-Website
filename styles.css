@@ -250,11 +250,6 @@ input#hamburgermenu:checked ~ nav.hamburgermenu {
 div.burgermenu {
     padding-left: 3vw;
     width: 250px;
-    z-index: 1;
-}
-
-.shoppingcartmain {
-    z-index: 2;
 }
 
 .hamburgermenu ul {
@@ -276,6 +271,7 @@ div.burgermenu {
 .hamburgermenu ul li:last-child {
     margin-bottom: 0;
     border-bottom: none;
+    padding: 0.5rem;
 }
 
 .hamburgermenu li a {
@@ -1403,6 +1399,7 @@ h2.h2product {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.01rem;
+    margin-top: 2rem;
     
 }
 
