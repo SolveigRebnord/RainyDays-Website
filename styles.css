@@ -154,6 +154,34 @@ header {
     z-index: 1;
 }
 
+input#smallsearch {
+    width: 15px;
+    height: 15px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
+    background-image:url(images.img/icons8-search.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    padding: 1rem 1rem 1rem 1rem;
+    transition: width 1s ease-in-out, border 1s ease-in-out;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+input#smallsearch:focus {
+    width: 60%;
+    border: 2px double white;
+    background-image: none;
+}
+
+input#smallsearch:hover {
+    cursor: pointer;
+}
+  
+
+
 /*Flex oppsett*/
 
 
