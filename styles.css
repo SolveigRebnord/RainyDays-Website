@@ -233,7 +233,7 @@ img.logoheader {
     left: 0;
     background: white;
   }
-   /* Inspirasjon/credit: https://codepen.io/mehi/pen/MyWqPM */
+   /* Inspirasjon/: https://codepen.io/mehi/pen/MyWqPM */
   
 
 
@@ -328,14 +328,14 @@ input#smallsearch {
 input#smallsearch:focus {
     width: 60%;
     border: 2px double white;
-    background-image: unset;
+    background-image: none;
 }
 
 input#smallsearch:hover {
     cursor: pointer;
 }
   
-
+/* inspo fra lecture notes*/
 
 /* Responsiveness*/
 
@@ -933,6 +933,7 @@ mark {
     font-size: 1.2rem;
     text-transform: uppercase;
     padding-right: 1rem;
+    font-family: var(--buttonfont);
 }
 
 
