@@ -328,7 +328,7 @@ input#smallsearch {
 input#smallsearch:focus {
     width: 60%;
     border: 2px double white;
-    background-image: none;
+    background-image: unset;
 }
 
 input#smallsearch:hover {
