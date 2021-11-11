@@ -155,8 +155,6 @@ header {
 }
 
 
-
-
 /*Flex oppsett*/
 
 
@@ -1972,7 +1970,7 @@ background-color: white;
     position: absolute;
     padding: 0;
     margin: 0;
-    top: 50vw;
+    top: 48vw;
     left: 38%;
     color: white;
 }
@@ -2049,12 +2047,6 @@ div.ourvision, div.ourstory {
     padding-top: 0.6rem;
 }
 
-
-@media screen and (max-width: 591px) {
-    .h1aboutus {
-        top: 40vw;
-    }
-}
 
 @media screen and (max-width: 1000px) {
     .sectiontextaboutus {
