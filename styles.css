@@ -1082,10 +1082,6 @@ section.productlist {
     display: block;
 }
 
-div.infoimage {
-    width: fit-content;
-}
-
 
 /*Styling*/
 
@@ -1761,7 +1757,7 @@ form#signupform ul {
 }
 
 
-fieldset#signupform {
+fieldset#signupformfieldset {
     width: 15rem;
 }
 
