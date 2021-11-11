@@ -42,7 +42,7 @@ p {
 
 
 mark {
-    font-family: var(--uppercaseheader);
+    font-family: var(--buttonfont);
     font-size: 2rem;
 }
 
