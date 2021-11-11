@@ -633,14 +633,24 @@ div.shopbycategorytext {
     width: 100%;
     height: auto;
     display: inline-block;
-    position: relative
+}
+
+.shopourbestsellers {
+    position: relative;
 }
 
 .shopbestsellersbutton {
     position: absolute;
     padding: 0;
     margin: 0;
-    left: 45vw;
+    top: 46%;
+   left: 43.5%;
+}
+
+div.shopourbestsellers {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -650,14 +660,12 @@ a.shopbestsellersbutton {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
     font-weight: 600;
-    padding: 0.8rem;
+    padding: 1vw;
     background-color: transparent;
     border: solid 2px white;
-    margin-bottom: 1rem;
-
 }
 
 a.shopbestsellersbutton:hover {
@@ -697,7 +705,7 @@ div.imagenewsletter {
 
 
 .imagenewsletter img {
-    width: 22rem;
+    width: 18rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -789,7 +797,7 @@ li.submitnewsletter button {
 }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1216px) {
     .imagenewsletter img {
        display: none;
     }
@@ -827,10 +835,10 @@ div.menulists {
 .menumobil a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: var(--nearlyblack);
     letter-spacing: 0.1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: var(--coldblue);
+    background-color: var(--coldrose);
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: bold;
