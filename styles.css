@@ -310,7 +310,7 @@ div.burgermenu {
 }
 
 input#smallsearch {
-    width: 15px;
+    width: 4rem;
     height: 15px;
     border: 2px solid transparent;
     border-radius: 4px;
