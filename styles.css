@@ -1,6 +1,6 @@
 
 main {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 * {
@@ -629,50 +629,24 @@ div.shopbycategorytext {
 
 /* Shop our bestsellers */
 
-.shopourbestsellers {
+.shopourbestsellers img {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    background-image: url(images.img/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
-    background-size: cover;
-    height: 50rem;
-}
-
-.bestsellerleft img {
-    width: 80%;
-    height: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-.bestsellerright img {
-    display: block;
-    width: 60%;
     height: auto;
-    padding-bottom: 3rem;
-    margin-right: auto;
-    margin-left: auto;
+    display: inline-block;
+    position: relative
 }
 
-div.bestsellerleft {
-    flex: 50%;
-    width: fit-content;
-    height: fit-content;
+.shopbestsellersbutton {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 45vw;
 }
 
-div.bestsellerright {
-    flex: 50%;
-    width: fit-content;
-    height: fit-content;
-}
 
 a.shopbestsellersbutton {
+
+    display: block;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -682,8 +656,8 @@ a.shopbestsellersbutton {
     padding: 0.8rem;
     background-color: transparent;
     border: solid 2px white;
-    display: inline-block;
     margin-bottom: 1rem;
+
 }
 
 a.shopbestsellersbutton:hover {
@@ -691,38 +665,11 @@ a.shopbestsellersbutton:hover {
     color: var(--nearlyblack);
 }
 
-div.bestsellerknapp {
-    text-align: center;
-}
 
 
-/*Responsiveness*/
-@media screen and (max-width: 700px) {
-    .shopourbestsellers {
-        flex: 100%;
-        flex-direction: column;
-    }
-}
 
-@media screen and (max-width: 700px) {
-    .bestsellerright img {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 700px) {
-    .shopourbestsellers {
-        height: fit-content;
-    }
-}
 
-@media screen and (max-width: 700px) {
-    .bestsellerleft img {
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        
-    }
-}
 
 
 
