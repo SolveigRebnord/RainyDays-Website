@@ -1,7 +1,9 @@
 # RainyDays-Website
-Full website for RainyDays. Finished product for CA HTML&amp;CSS
+Full website for RainyDays
+Finished product for CourseAssignment: HTML&CSS
 
-Desktop: 1440 x 1024
-iPad Air: 768 + 1024
-iPhone Pro Max: 428 x 926
-De andre: 390/375 x 800<
+Hei, du som sjekker ut dette prosjektet! 
+Dette var mitt første prosjekt med fullverdig HTML og CSS. Det er min baby; langt fra perfekt, men veldig viktig.
+(Arbeidets innhold, men ikke minst arbeidsmetoder er definitivt ikke gode på dette tidspunktet ;-)
+
+,Sunny
